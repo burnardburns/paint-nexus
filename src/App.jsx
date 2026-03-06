@@ -1,86 +1,112 @@
 import { useState, useEffect } from 'react'
 import { Search, Info, ArrowRight, ArrowLeft, Layers, Droplets, Home, ChevronRight, Paintbrush, Sparkles, FolderOpen, Trash2, Edit3, Package, Copy, Check } from 'lucide-react'
+import { Preferences } from '@capacitor/preferences';
 import paintData from './data/paints.json'
-
 
 /* ── Reusable PaintTile ───────────────────────────── */
 const PaintTile = ({ paint, descriptor, onClick, showType = false, showColorGroup = false, isOwned = false }) => {
+  const [isMobileExpanded, setIsMobileExpanded] = useState(false)
+
+  // 1. Listen for OTHER tiles opening so this one can instantly close
+  useEffect(() => {
+    const handleOtherTileExpanded = (e) => {
+      // If the broadcasted ID doesn't match this tile's ID, close it!
+      if (e.detail !== paint?.id) setIsMobileExpanded(false);
+    };
+    window.addEventListener('mobile-tile-expanded', handleOtherTileExpanded);
+    return () => window.removeEventListener('mobile-tile-expanded', handleOtherTileExpanded);
+  }, [paint?.id]);
+
+  // 2. Reduce the auto-close timeout to a snappy 2.5 seconds
+  useEffect(() => {
+    let timer;
+    if (isMobileExpanded) {
+      timer = setTimeout(() => setIsMobileExpanded(false), 2500);
+    }
+    // This perfectly cleans up the timer if you tap to close it early
+    return () => clearTimeout(timer);
+  }, [isMobileExpanded]);
+
   if (!paint) return null
   const isMetallic = paint.type?.toLowerCase().includes('metallic')
 
-  return (
-    <div className="relative w-full h-[72px]" onClick={onClick}>
-      {/* 1. The Placeholder Wrapper - Keeps the grid stable */}
+  const handleTileClick = (e) => {
+    const hasCursor = window.matchMedia('(hover: hover)').matches;
 
-      {/* 2. The Absolute Tile - This is what actually grows */}
+    if (hasCursor) {
+      // Desktop: Click instantly selects
+      if (onClick) onClick();
+    } else {
+      // Mobile: First tap expands, second tap selects
+      if (!isMobileExpanded) {
+        setIsMobileExpanded(true);
+        // Broadcast to the app that THIS tile just opened!
+        window.dispatchEvent(new CustomEvent('mobile-tile-expanded', { detail: paint.id }));
+      } else {
+        if (onClick) onClick();
+        setIsMobileExpanded(false);
+      }
+    }
+  };
+
+  const expandedContainer = isMobileExpanded ? "z-50 scale-[1.15] bg-bg-secondary/95 border-accent-primary/60 shadow-2xl h-auto" : "z-10 bg-bg-secondary border-glass-border";
+  const expandedBg = isMobileExpanded ? "bg-transparent" : "bg-bg-secondary/40";
+  const expandedText = isMobileExpanded ? "whitespace-normal text-clip" : "truncate";
+
+  return (
+    <div className="relative w-full h-[72px]" onClick={handleTileClick}>
       <div
         className={`
           absolute top-0 left-0 w-full min-h-[72px] group
           flex flex-row gap-3 rounded-xl overflow-hidden cursor-pointer
-          bg-bg-secondary border border-glass-border shadow-sm
-          transition-all duration-200 ease-out origin-center z-10
+          shadow-sm transition-all duration-200 ease-out origin-center
           hover:z-50 hover:scale-[1.15] hover:bg-bg-secondary/95 
           hover:border-accent-primary/60 hover:shadow-2xl hover:h-auto
+          ${expandedContainer}
         `}
       >
-        {/* Swatch - Stretches automatically if the height increases */}
         <div
           className={`w-20 flex-shrink-0 ${isMetallic ? 'metallic-swatch' : 'swatch-tile-bg'} transition-all duration-200`}
           style={{ backgroundColor: paint.hex }}
         />
 
-        {/* Label Container */}
-        <div className="pl-2 pr-4 py-2 flex flex-col justify-center flex-grow min-w-0 bg-bg-secondary/40 backdrop-blur-sm group-hover:bg-transparent transition-colors">
-
-          {/* Type & Color Group Header */}
+        <div className={`pl-2 pr-4 py-2 flex flex-col justify-center flex-grow min-w-0 backdrop-blur-sm group-hover:bg-transparent transition-colors ${expandedBg}`}>
           <div className="flex items-center flex-wrap gap-1.5 mb-0.5">
-            <span className="text-[10px] text-text-muted font-bold uppercase tracking-wider truncate group-hover:whitespace-normal group-hover:text-clip">
+            <span className={`text-[10px] text-text-muted font-bold uppercase tracking-wider group-hover:whitespace-normal group-hover:text-clip ${expandedText}`}>
               {showType ? `Citadel · ${paint.type}` : 'Citadel'}
             </span>
-
-            {/* Color Group Indicator */}
             {showColorGroup && paint.colorGroup && (
               <>
                 <span className="text-text-muted/50 text-[10px] flex-shrink-0">•</span>
                 <div className="flex items-center gap-1 flex-shrink-0">
-                  <div
-                    className="w-1.5 h-1.5 rounded-full shadow-sm border border-white/20"
-                    style={{ backgroundColor: paint.hex }}
-                  />
-                  <span className="text-[10px] text-text-secondary font-bold uppercase tracking-wider">
-                    {paint.colorGroup}
-                  </span>
+                  <div className="w-1.5 h-1.5 rounded-full shadow-sm border border-white/20" style={{ backgroundColor: paint.hex }} />
+                  <span className="text-[10px] text-text-secondary font-bold uppercase tracking-wider">{paint.colorGroup}</span>
                 </div>
               </>
             )}
           </div>
 
-          {/* Title & Owned Indicator */}
           <div className="flex items-center gap-2">
-            <span className="text-[15px] font-extrabold tracking-tight text-white leading-tight truncate group-hover:whitespace-normal group-hover:text-clip">
+            <span className={`text-[15px] font-extrabold tracking-tight text-white leading-tight group-hover:whitespace-normal group-hover:text-clip ${expandedText}`}>
               {paint.name}
             </span>
-            {isOwned && (
-              <Package size={14} className="text-amber-500/90 flex-shrink-0" title="In Collection" />
-            )}
+            {isOwned && <Package size={14} className="text-amber-500/90 flex-shrink-0" title="In Collection" />}
           </div>
 
-          {/* Description */}
           {paint.description && (
-            <span className="text-[11px] text-accent-primary/90 italic font-semibold mt-0.5 truncate group-hover:whitespace-normal group-hover:text-clip">
+            <span className={`text-[11px] text-accent-primary/90 italic font-semibold mt-0.5 group-hover:whitespace-normal group-hover:text-clip ${expandedText}`}>
               — {paint.description}
             </span>
           )}
 
-          {/* Recipe Descriptor (Only shows in Highlights column) */}
           {descriptor && (
             <span className="text-[9px] bg-accent-secondary/20 text-accent-secondary px-1.5 py-0.5 rounded mt-1.5 self-start font-bold uppercase tracking-wider border border-accent-secondary/30">
               {descriptor}
             </span>
           )}
         </div>
-      </div >
-    </div >
+      </div>
+    </div>
   )
 }
 
@@ -97,16 +123,32 @@ export default function App() {
   const [colorFilter, setColorFilter] = useState('All')
   const [ownershipFilter, setOwnershipFilter] = useState('All')
 
-  /* ── Collection & Local Storage ───────────── */
+  /* ── Collection & Native Storage ───────────── */
   const [isEditingCollection, setIsEditingCollection] = useState(false)
-  const [ownedPaints, setOwnedPaints] = useState(() => {
-    const saved = localStorage.getItem('citadelOwnedPaints')
-    return saved ? JSON.parse(saved) : []
-  })
+  const [ownedPaints, setOwnedPaints] = useState([])
+  const [isStorageLoaded, setIsStorageLoaded] = useState(false)
 
+  // 1. Load the data from the native hard drive when the app starts
   useEffect(() => {
-    localStorage.setItem('citadelOwnedPaints', JSON.stringify(ownedPaints))
-  }, [ownedPaints])
+    const loadCollection = async () => {
+      const { value } = await Preferences.get({ key: 'citadelOwnedPaints' });
+      if (value) {
+        setOwnedPaints(JSON.parse(value));
+      }
+      setIsStorageLoaded(true); // Tell React it's safe to start saving
+    };
+    loadCollection();
+  }, []);
+
+  // 2. Save the data whenever you click a paint (but only AFTER the initial load)
+  useEffect(() => {
+    if (isStorageLoaded) {
+      Preferences.set({
+        key: 'citadelOwnedPaints',
+        value: JSON.stringify(ownedPaints)
+      });
+    }
+  }, [ownedPaints, isStorageLoaded]);
 
   /* ── Dynamic Filter Lists ───────────── */
   const DYNAMIC_TYPES = ['All', ...Array.from(new Set(paintData.paints.map(p => p.type).filter(Boolean))).sort()]
@@ -344,7 +386,7 @@ export default function App() {
   );
   /* ── Render ─────────────────────────────────────── */
   return (
-    <div className="min-h-screen p-6 md:p-8 max-w-7xl mx-auto flex flex-col">
+    <div className="min-h-screen p-6 md:p-8 max-w-7xl mx-auto flex flex-col pt-[max(1.5rem,env(safe-area-inset-top))] pb-[max(1.5rem,env(safe-area-inset-bottom))]">
 
       {/* Header */}
       <header className="mb-6 text-center">
