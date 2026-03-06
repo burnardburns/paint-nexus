@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Search, Info, ArrowRight, ArrowLeft, Layers, Droplets, Home, ChevronRight, Paintbrush, Sparkles, FolderOpen, Trash2, Edit3, Package, Copy, Check } from 'lucide-react'
-import { Preferences } from '@capacitor/preferences';
+import { Preferences } from '@capacitor/preferences'
+import { Analytics } from '@vercel/analytics/react'
 import paintData from './data/paints.json'
 
 /* ── Reusable PaintTile ───────────────────────────── */
@@ -886,6 +887,9 @@ export default function App() {
           </div>
         </div>
       )}
+
+      {/* Vercel Analytics invisible tracker */}
+      <Analytics />
     </div>
   )
 }
