@@ -34,7 +34,12 @@
       "hex": "#4D0F1B",
       "colorGroup": "Red",
       "description": "Deep crimson/red wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Red Tone Wash",
+        "derivedDescriptor": "Warm Red Wash"
+      }
     },
     {
       "id": "agrax-earthshade",
@@ -43,7 +48,12 @@
       "hex": "#2F211A",
       "colorGroup": "Brown",
       "description": "Rich brown/dirt wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Strong Tone Wash",
+        "derivedDescriptor": "Dark Brown Wash"
+      }
     },
     {
       "id": "evil-sunz-scarlet",
@@ -78,7 +88,12 @@
           "descriptor": "Teal Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Cloudburst Blue",
+        "derivedDescriptor": "Deep Blue-Green"
+      }
     },
     {
       "id": "wild-rider-red",
@@ -112,7 +127,12 @@
           "id": "stormhost-silver",
           "descriptor": "Extreme Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "True Copper",
+        "derivedDescriptor": "Bright Copper"
+      }
     },
     {
       "id": "fire-dragon-bright",
@@ -121,7 +141,12 @@
       "hex": "#F49126",
       "colorGroup": "Orange",
       "description": "Bold orange highlight layer",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Mythical Orange",
+        "derivedDescriptor": "Vibrant Orange"
+      }
     },
     {
       "id": "wazdakka-red",
@@ -135,7 +160,12 @@
           "id": "squig-orange",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Chaotic Red",
+        "derivedDescriptor": "Muted Red"
+      }
     },
     {
       "id": "macragge-blue",
@@ -171,7 +201,12 @@
       "hex": "#161616",
       "colorGroup": "Black",
       "description": "Classic black wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Dark Tone Wash",
+        "derivedDescriptor": "Black Wash"
+      }
     },
     {
       "id": "drakenhof-nightshade",
@@ -180,7 +215,12 @@
       "hex": "#121C34",
       "colorGroup": "Blue",
       "description": "Deep midnight blue wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Blue Tone Wash",
+        "derivedDescriptor": "Midnight Blue Wash"
+      }
     },
     {
       "id": "altdorf-guard-blue",
@@ -232,7 +272,12 @@
           "id": "blue-horror",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Wolf Grey",
+        "derivedDescriptor": "Light Ice Blue/Grey"
+      }
     },
     {
       "id": "baal-red",
@@ -269,7 +314,12 @@
           "descriptor": "Edge Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Zealot Yellow",
+        "derivedDescriptor": "Intense Yellow Contrast"
+      }
     },
     {
       "id": "flash-gitz-yellow",
@@ -348,7 +398,12 @@
       "hex": "#134B29",
       "colorGroup": "Green",
       "description": "Vibrant forest green wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Green Tone Wash",
+        "derivedDescriptor": "Forest Green Wash"
+      }
     },
     {
       "id": "leadbelcher",
@@ -453,7 +508,12 @@
       "hex": "#D4BB8E",
       "colorGroup": "Metallic",
       "description": "Pale satin gold highlight",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Bright Gold",
+        "derivedDescriptor": "Bright Gold Metallic"
+      }
     },
     {
       "id": "reikland-fleshshade",
@@ -462,7 +522,12 @@
       "hex": "#673523",
       "colorGroup": "Flesh",
       "description": "Warm reddish-brown wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Flesh Wash",
+        "derivedDescriptor": "Reddish Flesh Wash"
+      }
     },
     {
       "id": "corax-white",
@@ -493,7 +558,12 @@
       "hex": "#FFFFFF",
       "colorGroup": "White",
       "description": "Purest crisp white layer",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Matt White",
+        "derivedDescriptor": "Pure White"
+      }
     },
     {
       "id": "ulthuan-grey",
@@ -507,7 +577,12 @@
           "id": "white-scar",
           "descriptor": "Fine Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Spaceship Exterior",
+        "derivedDescriptor": "Pale Grey"
+      }
     },
     {
       "id": "apothecary-white",
@@ -517,7 +592,12 @@
       "colorGroup": "White",
       "description": "Shaded white contrast",
       "highlights": [],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Holy White",
+        "derivedDescriptor": "Cool White Contrast"
+      }
     },
     {
       "id": "abaddon-black",
@@ -625,7 +705,12 @@
       "hex": "#E0CF9E",
       "colorGroup": "Bone",
       "description": "Pale bone layer",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Mummy Robes",
+        "derivedDescriptor": "Pale Bone"
+      }
     },
     {
       "id": "rakarth-flesh",
@@ -661,7 +746,12 @@
           "id": "pallid-wych-flesh",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Corpse Pale",
+        "derivedDescriptor": "Pale Flesh"
+      }
     },
     {
       "id": "averland-sunset",
@@ -679,7 +769,12 @@
           "id": "yriel-yellow",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Desert Yellow",
+        "derivedDescriptor": "Warm Mustard Yellow"
+      }
     },
     {
       "id": "balthasar-gold",
@@ -700,7 +795,12 @@
           "id": "sycorax-bronze",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Weapon Bronze",
+        "derivedDescriptor": "Dark Bronze"
+      }
     },
     {
       "id": "bugmans-glow",
@@ -717,7 +817,12 @@
           "id": "cadian-fleshtone",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Bugman's Glow"
+      }
     },
     {
       "id": "castellax-bronze",
@@ -734,7 +839,12 @@
           "id": "sycorax-bronze",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Castellax Bronze"
+      }
     },
     {
       "id": "castellan-green",
@@ -751,7 +861,12 @@
           "id": "loren-forest",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Castellan Green"
+      }
     },
     {
       "id": "celestra-grey",
@@ -768,7 +883,12 @@
           "id": "ulthuan-grey",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Matt White",
+        "derivedDescriptor": "Closest fanatic range match for Celestra Grey"
+      }
     },
     {
       "id": "corvus-black",
@@ -785,7 +905,12 @@
           "id": "eshin-grey",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Matt Black",
+        "derivedDescriptor": "Closest fanatic range match for Corvus Black"
+      }
     },
     {
       "id": "death-guard-green",
@@ -803,7 +928,12 @@
           "id": "elysian-green",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Death Guard Green"
+      }
     },
     {
       "id": "deathworld-forest",
@@ -820,7 +950,12 @@
           "id": "elysian-green",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Deathworld Forest"
+      }
     },
     {
       "id": "dryad-bark",
@@ -838,7 +973,12 @@
           "id": "gorthor-brown",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Dryad Bark"
+      }
     },
     {
       "id": "gal-vorbak-red",
@@ -855,7 +995,12 @@
           "id": "wazdakka-red",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Dragon Red",
+        "derivedDescriptor": "Closest fanatic range match for Gal Vorbak Red"
+      }
     },
     {
       "id": "grey-knights-steel",
@@ -872,7 +1017,12 @@
           "id": "stormhost-silver",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Grey Knights Steel"
+      }
     },
     {
       "id": "incubi-darkness",
@@ -889,7 +1039,12 @@
           "id": "kabalite-green",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Fanatic Teal",
+        "derivedDescriptor": "Closest fanatic range match for Incubi Darkness"
+      }
     },
     {
       "id": "iron-hands-steel",
@@ -906,7 +1061,12 @@
           "id": "ironbreaker",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Iron Hands Steel"
+      }
     },
     {
       "id": "iron-warriors",
@@ -923,7 +1083,12 @@
           "id": "leadbelcher",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Iron Warriors"
+      }
     },
     {
       "id": "jokaero-orange",
@@ -941,7 +1106,12 @@
           "id": "troll-slayer-orange",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Lava Orange",
+        "derivedDescriptor": "Closest fanatic range match for Jokaero Orange"
+      }
     },
     {
       "id": "kantor-blue",
@@ -959,7 +1129,12 @@
           "id": "altdorf-guard-blue",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Kantor Blue"
+      }
     },
     {
       "id": "khorne-red",
@@ -977,7 +1152,12 @@
           "id": "wazdakka-red",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Dragon Red",
+        "derivedDescriptor": "Closest fanatic range match for Khorne Red"
+      }
     },
     {
       "id": "lupercal-green",
@@ -994,7 +1174,12 @@
           "id": "sons-of-horus-green",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Lupercal Green"
+      }
     },
     {
       "id": "mechanicus-standard-grey",
@@ -1011,7 +1196,12 @@
           "id": "dawnstone",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Mechanicus Standard Grey"
+      }
     },
     {
       "id": "morghast-bone",
@@ -1028,7 +1218,12 @@
           "id": "ushabti-bone",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Skeleton Bone",
+        "derivedDescriptor": "Closest fanatic range match for Morghast Bone"
+      }
     },
     {
       "id": "mournfang-brown",
@@ -1045,7 +1240,12 @@
           "id": "skrag-brown",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Mournfang Brown"
+      }
     },
     {
       "id": "naggaroth-night",
@@ -1063,7 +1263,12 @@
           "id": "xereus-purple",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Naggaroth Night"
+      }
     },
     {
       "id": "night-lords-blue",
@@ -1080,7 +1285,12 @@
           "id": "kantor-blue",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Night Lords Blue"
+      }
     },
     {
       "id": "nocturne-green",
@@ -1097,7 +1307,12 @@
           "id": "vulkan-green",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Nocturne Green"
+      }
     },
     {
       "id": "orruk-flesh",
@@ -1115,7 +1330,12 @@
           "id": "ogryn-camo",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Orruk Flesh"
+      }
     },
     {
       "id": "ratskin-flesh",
@@ -1132,7 +1352,12 @@
           "id": "cadian-fleshtone",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Ratskin Flesh"
+      }
     },
     {
       "id": "rhinox-hide",
@@ -1149,7 +1374,12 @@
           "id": "doombull-brown",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Rhinox Hide"
+      }
     },
     {
       "id": "runelord-brass",
@@ -1167,7 +1397,12 @@
           "id": "canoptek-alloy",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Runelord Brass"
+      }
     },
     {
       "id": "screamer-pink",
@@ -1184,7 +1419,12 @@
           "id": "pink-horror",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Screamer Pink"
+      }
     },
     {
       "id": "steel-legion-drab",
@@ -1201,7 +1441,12 @@
           "id": "baneblade-brown",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Steel Legion Drab"
+      }
     },
     {
       "id": "stegadon-scale-green",
@@ -1219,7 +1464,12 @@
           "id": "sotek-green",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Fanatic Teal",
+        "derivedDescriptor": "Closest fanatic range match for Stegadon Scale Green"
+      }
     },
     {
       "id": "sylvaneth-bark",
@@ -1236,7 +1486,12 @@
           "id": "gorthor-brown",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Sylvaneth Bark"
+      }
     },
     {
       "id": "the-fang",
@@ -1254,7 +1509,12 @@
           "id": "russ-grey",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for The Fang"
+      }
     },
     {
       "id": "thousand-sons-blue",
@@ -1272,7 +1532,12 @@
           "id": "ahriman-blue",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Thousand Sons Blue"
+      }
     },
     {
       "id": "waaagh-flesh",
@@ -1290,7 +1555,12 @@
           "id": "warboss-green",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Waaagh! Flesh"
+      }
     },
     {
       "id": "wraithbone",
@@ -1308,7 +1578,12 @@
           "id": "screaming-skull",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Skeleton Bone",
+        "derivedDescriptor": "Closest fanatic range match for Wraithbone"
+      }
     },
     {
       "id": "ahriman-blue",
@@ -1318,7 +1593,12 @@
       "colorGroup": "Blue",
       "description": "Bright teal-blue layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Ahriman Blue"
+      }
     },
     {
       "id": "alaitoc-blue",
@@ -1328,7 +1608,12 @@
       "colorGroup": "Blue",
       "description": "Deep blue layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Alaitoc Blue"
+      }
     },
     {
       "id": "balor-brown",
@@ -1338,7 +1623,12 @@
       "colorGroup": "Brown",
       "description": "Light tan brown layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Balor Brown"
+      }
     },
     {
       "id": "baneblade-brown",
@@ -1348,7 +1638,12 @@
       "colorGroup": "Brown",
       "description": "Medium khaki layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Baneblade Brown"
+      }
     },
     {
       "id": "bloodcaller-red",
@@ -1358,7 +1653,12 @@
       "colorGroup": "Red",
       "description": "Dark red layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Dragon Red",
+        "derivedDescriptor": "Closest fanatic range match for Bloodcaller Red"
+      }
     },
     {
       "id": "cadian-fleshtone",
@@ -1373,7 +1673,12 @@
           "id": "kislev-flesh",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Cadian Fleshtone"
+      }
     },
     {
       "id": "canoptek-alloy",
@@ -1383,7 +1688,12 @@
       "colorGroup": "Metallic",
       "description": "Silver-green brass highlight",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Canoptek Alloy"
+      }
     },
     {
       "id": "doombull-brown",
@@ -1393,7 +1703,12 @@
       "colorGroup": "Brown",
       "description": "Warm ruddy brown layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Doombull Brown"
+      }
     },
     {
       "id": "elysian-green",
@@ -1403,7 +1718,12 @@
       "colorGroup": "Green",
       "description": "Light olive green layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Elysian Green"
+      }
     },
     {
       "id": "gehennas-gold",
@@ -1418,7 +1738,12 @@
           "id": "auric-armour-gold",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Gehenna's Gold"
+      }
     },
     {
       "id": "genestealer-purple",
@@ -1428,7 +1753,12 @@
       "colorGroup": "Purple",
       "description": "Vibrant pink-purple layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Genestealer Purple"
+      }
     },
     {
       "id": "gorthor-brown",
@@ -1443,7 +1773,12 @@
           "id": "baneblade-brown",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Gorthor Brown"
+      }
     },
     {
       "id": "kabalite-green",
@@ -1458,7 +1793,12 @@
           "id": "sybarite-green",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Fanatic Teal",
+        "derivedDescriptor": "Closest fanatic range match for Kabalite Green"
+      }
     },
     {
       "id": "kislev-flesh",
@@ -1473,7 +1813,12 @@
           "id": "flayed-one-flesh",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Kislev Flesh"
+      }
     },
     {
       "id": "loren-forest",
@@ -1488,7 +1833,12 @@
           "id": "straken-green",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Loren Forest"
+      }
     },
     {
       "id": "ogryn-camo",
@@ -1498,7 +1848,12 @@
       "colorGroup": "Green",
       "description": "Pale yellow-green layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Ogryn Camo"
+      }
     },
     {
       "id": "pallid-wych-flesh",
@@ -1508,7 +1863,12 @@
       "colorGroup": "Flesh",
       "description": "Extremely pale ivory flesh",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Pallid Wych Flesh"
+      }
     },
     {
       "id": "pink-horror",
@@ -1523,7 +1883,12 @@
           "id": "emperors-children",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Pink Horror"
+      }
     },
     {
       "id": "russ-grey",
@@ -1538,7 +1903,12 @@
           "id": "fenrisian-grey",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Russ Grey"
+      }
     },
     {
       "id": "skrag-brown",
@@ -1553,7 +1923,12 @@
           "id": "deathclaw-brown",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Skrag Brown"
+      }
     },
     {
       "id": "sons-of-horus-green",
@@ -1563,7 +1938,12 @@
       "colorGroup": "Green",
       "description": "Sea-green layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Sons of Horus Green"
+      }
     },
     {
       "id": "sotek-green",
@@ -1578,7 +1958,12 @@
           "id": "temple-guard-blue",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Fanatic Teal",
+        "derivedDescriptor": "Closest fanatic range match for Sotek Green"
+      }
     },
     {
       "id": "sybarite-green",
@@ -1588,7 +1973,12 @@
       "colorGroup": "Teal",
       "description": "Bright green-teal edge",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Fanatic Teal",
+        "derivedDescriptor": "Closest fanatic range match for Sybarite Green"
+      }
     },
     {
       "id": "sycorax-bronze",
@@ -1598,7 +1988,12 @@
       "colorGroup": "Metallic",
       "description": "Pale aged bronze layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Sycorax Bronze"
+      }
     },
     {
       "id": "teclis-blue",
@@ -1613,7 +2008,12 @@
           "id": "lothern-blue",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Teclis Blue"
+      }
     },
     {
       "id": "troll-slayer-orange",
@@ -1628,7 +2028,12 @@
           "id": "fire-dragon-bright",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Lava Orange",
+        "derivedDescriptor": "Closest fanatic range match for Troll Slayer Orange"
+      }
     },
     {
       "id": "vulkan-green",
@@ -1638,7 +2043,12 @@
       "colorGroup": "Green",
       "description": "Dark rich green layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Vulkan Green"
+      }
     },
     {
       "id": "warboss-green",
@@ -1653,7 +2063,12 @@
           "id": "skarsnik-green",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Warboss Green"
+      }
     },
     {
       "id": "xereus-purple",
@@ -1668,7 +2083,12 @@
           "id": "genestealer-purple",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Xereus Purple"
+      }
     },
     {
       "id": "yriel-yellow",
@@ -1683,7 +2103,12 @@
           "id": "flash-gitz-yellow",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Daemonic Yellow",
+        "derivedDescriptor": "Closest fanatic range match for Yriel Yellow"
+      }
     },
     {
       "id": "athonian-camoshade",
@@ -1692,7 +2117,12 @@
       "hex": "#434D27",
       "colorGroup": "Green",
       "description": "Earthy green wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Green Tone",
+        "derivedDescriptor": "Closest wash tone for Athonian Camoshade"
+      }
     },
     {
       "id": "casandora-yellow",
@@ -1701,7 +2131,12 @@
       "hex": "#D37324",
       "colorGroup": "Yellow",
       "description": "Warm yellow-orange wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Soft Tone",
+        "derivedDescriptor": "Closest wash tone for Casandora Yellow"
+      }
     },
     {
       "id": "coelia-greenshade",
@@ -1710,7 +2145,12 @@
       "hex": "#0D4645",
       "colorGroup": "Teal",
       "description": "Dark cyan/teal wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Soft Tone",
+        "derivedDescriptor": "Closest wash tone for Coelia Greenshade"
+      }
     },
     {
       "id": "druchii-violet",
@@ -1719,7 +2159,12 @@
       "hex": "#301A39",
       "colorGroup": "Purple",
       "description": "Dark royal purple wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Soft Tone",
+        "derivedDescriptor": "Closest wash tone for Druchii Violet"
+      }
     },
     {
       "id": "fuegan-orange",
@@ -1728,7 +2173,12 @@
       "hex": "#A8361B",
       "colorGroup": "Orange",
       "description": "Deep fiery orange wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Soft Tone",
+        "derivedDescriptor": "Closest wash tone for Fuegan Orange"
+      }
     },
     {
       "id": "seraphim-sepia",
@@ -1737,7 +2187,12 @@
       "hex": "#844E20",
       "colorGroup": "Brown",
       "description": "Warm sepia wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Strong Tone",
+        "derivedDescriptor": "Closest wash tone for Seraphim Sepia"
+      }
     },
     {
       "id": "basilicanum-grey",
@@ -1753,7 +2208,12 @@
           "descriptor": "Grey Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Grey Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Basilicanum Grey"
+      }
     },
     {
       "id": "black-templar",
@@ -1790,7 +2250,12 @@
           "descriptor": "Mid Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Slaughter Red",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Blood Angels Red"
+      }
     },
     {
       "id": "cygor-brown",
@@ -1806,7 +2271,12 @@
           "descriptor": "Leather Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Hardened Leather",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Cygor Brown"
+      }
     },
     {
       "id": "dark-angels-green",
@@ -1822,7 +2292,12 @@
           "descriptor": "Vibrant Edge"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Dark Angels Green"
+      }
     },
     {
       "id": "flesh-tearers-red",
@@ -1838,7 +2313,12 @@
           "descriptor": "Rich Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Slaughter Red",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Flesh Tearers Red"
+      }
     },
     {
       "id": "gore-grunta-fur",
@@ -1854,7 +2334,12 @@
           "descriptor": "Warm Leather"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Hardened Leather",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Gore-Grunta Fur"
+      }
     },
     {
       "id": "guilliman-flesh",
@@ -1870,7 +2355,12 @@
           "descriptor": "Skin Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Crusader Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Guilliman Flesh"
+      }
     },
     {
       "id": "ironjawz-yellow",
@@ -1886,7 +2376,12 @@
           "descriptor": "Warm Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Zealot Yellow",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Ironjawz Yellow"
+      }
     },
     {
       "id": "leviadon-blue",
@@ -1902,7 +2397,12 @@
           "descriptor": "Vibrant Edge"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Leviadon Blue"
+      }
     },
     {
       "id": "ork-flesh",
@@ -1918,7 +2418,12 @@
           "descriptor": "Skin Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Ork Flesh"
+      }
     },
     {
       "id": "skeleton-horde",
@@ -1934,7 +2439,12 @@
           "descriptor": "Bone Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Bone Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Skeleton Horde"
+      }
     },
     {
       "id": "snakebite-leather",
@@ -1950,7 +2460,12 @@
           "descriptor": "Light Leather"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Hardened Leather",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Snakebite Leather"
+      }
     },
     {
       "id": "talassar-blue",
@@ -1966,7 +2481,12 @@
           "descriptor": "Edge Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Talassar Blue"
+      }
     },
     {
       "id": "terradon-turquoise",
@@ -1982,7 +2502,12 @@
           "descriptor": "Teal Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Teal Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Terradon Turquoise"
+      }
     },
     {
       "id": "ultramarines-blue",
@@ -1998,7 +2523,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Ultramarines Blue"
+      }
     },
     {
       "id": "volupus-pink",
@@ -2014,7 +2544,12 @@
           "descriptor": "Vibrant Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Purple/Pink Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Volupus Pink"
+      }
     },
     {
       "id": "wyldwood",
@@ -2030,7 +2565,12 @@
           "descriptor": "Wood Grain Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Hardened Leather",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Wyldwood"
+      }
     },
     {
       "id": "catachan-fleshtone",
@@ -2047,7 +2587,12 @@
           "id": "bloodreaver-flesh",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Catachan Fleshtone"
+      }
     },
     {
       "id": "caledor-sky",
@@ -2064,7 +2609,12 @@
           "id": "teclis-blue",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Caledor Sky"
+      }
     },
     {
       "id": "screaming-bell",
@@ -2082,7 +2632,12 @@
           "id": "hashut-copper",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Screaming Bell"
+      }
     },
     {
       "id": "warplock-bronze",
@@ -2099,7 +2654,12 @@
           "id": "brass-scorpion",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Warplock Bronze"
+      }
     },
     {
       "id": "xv88",
@@ -2116,7 +2676,12 @@
           "id": "tau-light-ochre",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for XV88"
+      }
     },
     {
       "id": "skavenblight-dinge",
@@ -2134,7 +2699,12 @@
           "id": "stormvermin-fur",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Skavenblight Dinge"
+      }
     },
     {
       "id": "stormvermin-fur",
@@ -2151,7 +2721,12 @@
           "id": "karak-stone",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Stormvermin Fur"
+      }
     },
     {
       "id": "grey-seer",
@@ -2168,7 +2743,12 @@
           "id": "ulthuan-grey",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Grey Seer"
+      }
     },
     {
       "id": "barak-nar-burgundy",
@@ -2185,7 +2765,12 @@
           "id": "pink-horror",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Dragon Red",
+        "derivedDescriptor": "Closest fanatic range match for Barak-Nar Burgundy"
+      }
     },
     {
       "id": "daemonette-hide",
@@ -2202,7 +2787,12 @@
           "id": "warpfiend-grey",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Daemonette Hide"
+      }
     },
     {
       "id": "word-bearers-red",
@@ -2220,7 +2810,12 @@
           "id": "wazdakka-red",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Dragon Red",
+        "derivedDescriptor": "Closest fanatic range match for Word Bearers Red"
+      }
     },
     {
       "id": "ionrach-skin",
@@ -2238,7 +2833,12 @@
           "id": "deepkin-ash",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Ionrach Skin"
+      }
     },
     {
       "id": "deepkin-ash",
@@ -2255,7 +2855,12 @@
           "id": "pallid-wych-flesh",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Deepkin Ash"
+      }
     },
     {
       "id": "death-korps-drab",
@@ -2272,7 +2877,12 @@
           "id": "baneblade-brown",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Death Korps Drab"
+      }
     },
     {
       "id": "thondia-brown",
@@ -2290,7 +2900,12 @@
           "id": "doombull-brown",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Thondia Brown"
+      }
     },
     {
       "id": "hobgrot-slit",
@@ -2307,7 +2922,12 @@
           "id": "ushabti-bone",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Hobgrot Slit"
+      }
     },
     {
       "id": "kroak-green",
@@ -2316,7 +2936,12 @@
       "hex": "#1A4138",
       "colorGroup": "Green",
       "description": "Dark, moody green wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Green Tone",
+        "derivedDescriptor": "Closest wash tone for Kroak Green"
+      }
     },
     {
       "id": "poxwalker",
@@ -2325,7 +2950,12 @@
       "hex": "#5C674E",
       "colorGroup": "Green",
       "description": "Sickly, necrotic green wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Green Tone",
+        "derivedDescriptor": "Closest wash tone for Poxwalker"
+      }
     },
     {
       "id": "targor-rageshade",
@@ -2334,7 +2964,12 @@
       "hex": "#635252",
       "colorGroup": "Flesh",
       "description": "Pale, bruised reddish-grey wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Flesh Wash",
+        "derivedDescriptor": "Closest wash tone for Targor Rageshade"
+      }
     },
     {
       "id": "mortarion-grime",
@@ -2343,7 +2978,12 @@
       "hex": "#7E754F",
       "colorGroup": "Yellow/Brown",
       "description": "Gritty, yellowish-brown grime wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Strong Tone",
+        "derivedDescriptor": "Closest wash tone for Mortarion Grime"
+      }
     },
     {
       "id": "tyran-blue",
@@ -2352,7 +2992,12 @@
       "hex": "#1B3F77",
       "colorGroup": "Blue",
       "description": "Vibrant, deep blue wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Blue Tone",
+        "derivedDescriptor": "Closest wash tone for Tyran Blue"
+      }
     },
     {
       "id": "berserker-bloodshade",
@@ -2361,7 +3006,12 @@
       "hex": "#831919",
       "colorGroup": "Red",
       "description": "Rich, vivid red wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Red Tone",
+        "derivedDescriptor": "Closest wash tone for Berserker Bloodshade"
+      }
     },
     {
       "id": "soulblight-grey",
@@ -2370,7 +3020,12 @@
       "hex": "#8F9396",
       "colorGroup": "Grey",
       "description": "Cool, pale grey wash",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Soft Tone",
+        "derivedDescriptor": "Closest wash tone for Soulblight Grey"
+      }
     },
     {
       "id": "cryptek-armourshade-gloss",
@@ -2379,7 +3034,12 @@
       "hex": "#5C3E25",
       "colorGroup": "Brown",
       "description": "Glossy, warm brown wash for metallics",
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Washes",
+        "match": "Strong Tone",
+        "derivedDescriptor": "Closest wash tone for Cryptek Armourshade Gloss"
+      }
     },
     {
       "id": "iyanden-yellow",
@@ -2395,7 +3055,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Zealot Yellow",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Iyanden Yellow"
+      }
     },
     {
       "id": "nazdreg-yellow",
@@ -2411,7 +3076,12 @@
           "descriptor": "Ochre Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Zealot Yellow",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Nazdreg Yellow"
+      }
     },
     {
       "id": "gryph-hound-orange",
@@ -2427,7 +3097,12 @@
           "descriptor": "Vibrant Edge"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orange Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Gryph-Hound Orange"
+      }
     },
     {
       "id": "shyish-purple",
@@ -2443,7 +3118,12 @@
           "descriptor": "Rich Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Purple Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Shyish Purple"
+      }
     },
     {
       "id": "magos-purple",
@@ -2459,7 +3139,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Purple/Pink Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Magos Purple"
+      }
     },
     {
       "id": "akhelian-green",
@@ -2475,7 +3160,12 @@
           "descriptor": "Teal Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Teal Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Akhelian Green"
+      }
     },
     {
       "id": "aethermatic-blue",
@@ -2491,7 +3181,12 @@
           "descriptor": "Bright Edge"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Aethermatic Blue"
+      }
     },
     {
       "id": "militarum-green",
@@ -2507,7 +3202,12 @@
           "descriptor": "Olive Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Militarum Green"
+      }
     },
     {
       "id": "plaguebearer-flesh",
@@ -2523,7 +3223,12 @@
           "descriptor": "Sickly Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Plaguebearer Flesh"
+      }
     },
     {
       "id": "space-wolves-grey",
@@ -2539,7 +3244,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Space Wolves Grey"
+      }
     },
     {
       "id": "black-legion",
@@ -2555,7 +3265,12 @@
           "descriptor": "Cool Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Grim Black",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Black Legion"
+      }
     },
     {
       "id": "ratling-grime",
@@ -2571,7 +3286,12 @@
           "descriptor": "Gritty Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Hardened Leather",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Ratling Grime"
+      }
     },
     {
       "id": "gryph-charger-grey",
@@ -2587,7 +3307,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Gryph-Charger Grey"
+      }
     },
     {
       "id": "warp-lightning",
@@ -2603,7 +3328,12 @@
           "descriptor": "Vibrant Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Warp Lightning"
+      }
     },
     {
       "id": "creed-camo",
@@ -2619,7 +3349,12 @@
           "descriptor": "Camo Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Creed Camo"
+      }
     },
     {
       "id": "striking-scorpion-green",
@@ -2635,7 +3370,12 @@
           "descriptor": "Edge Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Striking Scorpion Green"
+      }
     },
     {
       "id": "darkoath-flesh",
@@ -2651,7 +3391,12 @@
           "descriptor": "Skin Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Crusader Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Darkoath Flesh"
+      }
     },
     {
       "id": "fyreslayer-flesh",
@@ -2667,7 +3412,12 @@
           "descriptor": "Bright Skin Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Crusader Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Fyreslayer Flesh"
+      }
     },
     {
       "id": "magmadroth-flame",
@@ -2683,7 +3433,12 @@
           "descriptor": "Fiery Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orange Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Magmadroth Flame"
+      }
     },
     {
       "id": "doomfire-magenta",
@@ -2699,7 +3454,12 @@
           "descriptor": "Vibrant Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Purple/Pink Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Doomfire Magenta"
+      }
     },
     {
       "id": "sigvald-burgundy",
@@ -2715,7 +3475,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Slaughter Red",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Sigvald Burgundy"
+      }
     },
     {
       "id": "luxion-purple",
@@ -2731,7 +3496,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Purple Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Luxion Purple"
+      }
     },
     {
       "id": "leviathan-purple",
@@ -2747,7 +3517,12 @@
           "descriptor": "Edge Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Purple Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Leviathan Purple"
+      }
     },
     {
       "id": "asurmen-blue",
@@ -2763,7 +3538,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Asurmen Blue"
+      }
     },
     {
       "id": "frostheart",
@@ -2779,7 +3559,12 @@
           "descriptor": "Ice Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Frostheart"
+      }
     },
     {
       "id": "kroxigor-scales",
@@ -2795,7 +3580,12 @@
           "descriptor": "Scale Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Teal Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Kroxigor Scales"
+      }
     },
     {
       "id": "briar-queen-chill",
@@ -2811,7 +3601,12 @@
           "descriptor": "Ethereal Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Holy White",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Briar Queen Chill"
+      }
     },
     {
       "id": "mantis-warriors-green",
@@ -2827,7 +3622,12 @@
           "descriptor": "Vibrant Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Mantis Warriors Green"
+      }
     },
     {
       "id": "nighthaunt-gloom",
@@ -2843,7 +3643,12 @@
           "descriptor": "Ethereal Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Nighthaunt Gloom"
+      }
     },
     {
       "id": "garaghaks-sewer",
@@ -2859,7 +3664,12 @@
           "descriptor": "Grime Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Hardened Leather",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Garaghak's Sewer"
+      }
     },
     {
       "id": "hexwraith-flame",
@@ -2875,7 +3685,12 @@
           "descriptor": "Flame Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Hexwraith Flame"
+      }
     },
     {
       "id": "karandras-green",
@@ -2891,7 +3706,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Karandras Green"
+      }
     },
     {
       "id": "bad-moon-yellow",
@@ -2907,7 +3727,12 @@
           "descriptor": "Vibrant Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Zealot Yellow",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Bad Moon Yellow"
+      }
     },
     {
       "id": "gutrippa-flesh",
@@ -2923,7 +3748,12 @@
           "descriptor": "Sickly Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Orc Skin",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Gutrippa Flesh"
+      }
     },
     {
       "id": "aggaros-dunes",
@@ -2939,7 +3769,12 @@
           "descriptor": "Dusty Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Zealot Yellow",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Aggaros Dunes"
+      }
     },
     {
       "id": "aeldari-emerald",
@@ -2955,7 +3790,12 @@
           "descriptor": "Edge Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Teal Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Aeldari Emerald"
+      }
     },
     {
       "id": "pylar-glacier",
@@ -2971,7 +3811,12 @@
           "descriptor": "Frost Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Pylar Glacier"
+      }
     },
     {
       "id": "celestium-blue",
@@ -2987,7 +3832,12 @@
           "descriptor": "Standard Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Magic Blue",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Celestium Blue"
+      }
     },
     {
       "id": "dreadful-visage",
@@ -3003,7 +3853,12 @@
           "descriptor": "Pale Highlight"
         }
       ],
-      "specialLogic": "Contrast paints provide their own shading."
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Speedpaint 2.0",
+        "match": "Purple/Grey Speedpaint",
+        "derivedDescriptor": "Closest Speedpaint 2.0 match for Contrast Dreadful Visage"
+      }
     },
     {
       "id": "skarsnik-green",
@@ -3018,7 +3873,12 @@
           "id": "krieg-khaki",
           "descriptor": "Pale Edge Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Skarsnik Green"
+      }
     },
     {
       "id": "straken-green",
@@ -3033,7 +3893,12 @@
           "id": "nurgling-green",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Straken Green"
+      }
     },
     {
       "id": "nurgling-green",
@@ -3048,7 +3913,12 @@
           "id": "krieg-khaki",
           "descriptor": "Extreme Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Nurgling Green"
+      }
     },
     {
       "id": "krieg-khaki",
@@ -3063,7 +3933,12 @@
           "id": "pallid-wych-flesh",
           "descriptor": "Pale Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Skeleton Bone",
+        "derivedDescriptor": "Closest fanatic range match for Krieg Khaki"
+      }
     },
     {
       "id": "karak-stone",
@@ -3078,7 +3953,12 @@
           "id": "screaming-skull",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Skeleton Bone",
+        "derivedDescriptor": "Closest fanatic range match for Karak Stone"
+      }
     },
     {
       "id": "tallarn-sand",
@@ -3093,7 +3973,12 @@
           "id": "karak-stone",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Tallarn Sand"
+      }
     },
     {
       "id": "zamesi-desert",
@@ -3108,7 +3993,12 @@
           "id": "ushabti-bone",
           "descriptor": "Bright Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Daemonic Yellow",
+        "derivedDescriptor": "Closest fanatic range match for Zamesi Desert"
+      }
     },
     {
       "id": "tau-light-ochre",
@@ -3123,7 +4013,12 @@
           "id": "ungor-flesh",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Tau Light Ochre"
+      }
     },
     {
       "id": "squig-orange",
@@ -3138,7 +4033,12 @@
           "id": "ratskin-flesh",
           "descriptor": "Flesh Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Dragon Red",
+        "derivedDescriptor": "Closest fanatic range match for Squig Orange"
+      }
     },
     {
       "id": "deathclaw-brown",
@@ -3153,7 +4053,12 @@
           "id": "tau-light-ochre",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Leather Brown",
+        "derivedDescriptor": "Closest fanatic range match for Deathclaw Brown"
+      }
     },
     {
       "id": "bestigor-flesh",
@@ -3168,7 +4073,12 @@
           "id": "ungor-flesh",
           "descriptor": "Pale Skin Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Bestigor Flesh"
+      }
     },
     {
       "id": "tuskgor-fur",
@@ -3183,7 +4093,12 @@
           "id": "deathclaw-brown",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Dragon Red",
+        "derivedDescriptor": "Closest fanatic range match for Tuskgor Fur"
+      }
     },
     {
       "id": "bloodreaver-flesh",
@@ -3198,7 +4113,12 @@
           "id": "knight-questor-flesh",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Bloodreaver Flesh"
+      }
     },
     {
       "id": "knight-questor-flesh",
@@ -3213,7 +4133,12 @@
           "id": "cadian-fleshtone",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Knight-Questor Flesh"
+      }
     },
     {
       "id": "brass-scorpion",
@@ -3228,7 +4153,12 @@
           "id": "sycorax-bronze",
           "descriptor": "Edge Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Brass Scorpion"
+      }
     },
     {
       "id": "lothern-blue",
@@ -3243,7 +4173,12 @@
           "id": "blue-horror",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Lothern Blue"
+      }
     },
     {
       "id": "temple-guard-blue",
@@ -3258,7 +4193,12 @@
           "id": "baharroth-blue",
           "descriptor": "Edge Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Fanatic Teal",
+        "derivedDescriptor": "Closest fanatic range match for Temple Guard Blue"
+      }
     },
     {
       "id": "dark-reaper",
@@ -3273,7 +4213,12 @@
           "id": "thunderhawk-blue",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Dark Reaper"
+      }
     },
     {
       "id": "thunderhawk-blue",
@@ -3288,7 +4233,12 @@
           "id": "russ-grey",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Thunderhawk Blue"
+      }
     },
     {
       "id": "warpfiend-grey",
@@ -3303,7 +4253,12 @@
           "id": "slaanesh-grey",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Warpfiend Grey"
+      }
     },
     {
       "id": "slaanesh-grey",
@@ -3318,7 +4273,12 @@
           "id": "pallid-wych-flesh",
           "descriptor": "Extreme Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Slaanesh Grey"
+      }
     },
     {
       "id": "administratum-grey",
@@ -3333,7 +4293,12 @@
           "id": "white-scar",
           "descriptor": "Edge Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ash Grey",
+        "derivedDescriptor": "Closest fanatic range match for Administratum Grey"
+      }
     },
     {
       "id": "emperors-children",
@@ -3348,7 +4313,12 @@
           "id": "fulgrim-pink",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Emperor's Children"
+      }
     },
     {
       "id": "fulgrim-pink",
@@ -3358,7 +4328,12 @@
       "colorGroup": "Purple/Pink",
       "description": "Pale, bright pastel pink layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Fulgrim Pink"
+      }
     },
     {
       "id": "kakophoni-purple",
@@ -3373,7 +4348,12 @@
           "id": "dechala-lilac",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Kakophoni Purple"
+      }
     },
     {
       "id": "dechala-lilac",
@@ -3383,7 +4363,12 @@
       "colorGroup": "Purple",
       "description": "Soft, pale pastel lilac layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Alien Purple",
+        "derivedDescriptor": "Closest fanatic range match for Dechala Lilac"
+      }
     },
     {
       "id": "blue-horror",
@@ -3398,7 +4383,12 @@
           "id": "white-scar",
           "descriptor": "Extreme Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Blue Horror"
+      }
     },
     {
       "id": "hashut-copper",
@@ -3413,7 +4403,12 @@
           "id": "sycorax-bronze",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Hashut Copper"
+      }
     },
     {
       "id": "runefang-steel",
@@ -3428,7 +4423,12 @@
           "id": "stormhost-silver",
           "descriptor": "Extreme Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Runefang Steel"
+      }
     },
     {
       "id": "ungor-flesh",
@@ -3443,7 +4443,12 @@
           "id": "pallid-wych-flesh",
           "descriptor": "Standard Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Barbarian Flesh",
+        "derivedDescriptor": "Closest fanatic range match for Ungor Flesh"
+      }
     },
     {
       "id": "baharroth-blue",
@@ -3458,7 +4463,12 @@
           "id": "blue-horror",
           "descriptor": "Extreme Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Fanatic Teal",
+        "derivedDescriptor": "Closest fanatic range match for Baharroth Blue"
+      }
     },
     {
       "id": "hoeth-blue",
@@ -3473,7 +4483,12 @@
           "id": "lothern-blue",
           "descriptor": "Layer Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Closest fanatic range match for Hoeth Blue"
+      }
     },
     {
       "id": "lugganath-orange",
@@ -3483,7 +4498,12 @@
       "colorGroup": "Orange",
       "description": "Soft, pale pastel orange edge layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Lava Orange",
+        "derivedDescriptor": "Closest fanatic range match for Lugganath Orange"
+      }
     },
     {
       "id": "dorn-yellow",
@@ -3493,7 +4513,12 @@
       "colorGroup": "Yellow",
       "description": "Very pale, sharp yellow edge layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Daemonic Yellow",
+        "derivedDescriptor": "Closest fanatic range match for Dorn Yellow"
+      }
     },
     {
       "id": "phalanx-yellow",
@@ -3508,7 +4533,12 @@
           "id": "dorn-yellow",
           "descriptor": "Edge Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Daemonic Yellow",
+        "derivedDescriptor": "Closest fanatic range match for Phalanx Yellow"
+      }
     },
     {
       "id": "gauss-blaster-green",
@@ -3518,7 +4548,12 @@
       "colorGroup": "Green",
       "description": "Pale mint-green edge layer",
       "shades": [],
-      "highlights": []
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Closest fanatic range match for Gauss Blaster Green"
+      }
     },
     {
       "id": "skullcrusher-brass",
@@ -3533,7 +4568,12 @@
           "id": "canoptek-alloy",
           "descriptor": "Extreme Highlight"
         }
-      ]
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Gun Metal",
+        "derivedDescriptor": "Closest metallic match for Skullcrusher Brass"
+      }
     }
   ]
 }
