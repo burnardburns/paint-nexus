@@ -1,0 +1,3539 @@
+{
+  "paints": [
+    {
+      "id": "mephiston-red",
+      "name": "Mephiston Red",
+      "type": "Base",
+      "hex": "#9A1115",
+      "colorGroup": "Red",
+      "description": "Rich matte crimson base",
+      "shades": [
+        "carroburg-crimson",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "evil-sunz-scarlet",
+          "descriptor": "Vibrant"
+        },
+        {
+          "id": "wazdakka-red",
+          "descriptor": "Moody/Cool"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Pure Red",
+        "derivedDescriptor": "Vibrant Neutral"
+      }
+    },
+    {
+      "id": "carroburg-crimson",
+      "name": "Carroburg Crimson",
+      "type": "Shade",
+      "hex": "#4D0F1B",
+      "colorGroup": "Red",
+      "description": "Deep crimson/red wash",
+      "highlights": []
+    },
+    {
+      "id": "agrax-earthshade",
+      "name": "Agrax Earthshade",
+      "type": "Shade",
+      "hex": "#2F211A",
+      "colorGroup": "Brown",
+      "description": "Rich brown/dirt wash",
+      "highlights": []
+    },
+    {
+      "id": "evil-sunz-scarlet",
+      "name": "Evil Sunz Scarlet",
+      "type": "Layer",
+      "hex": "#C01411",
+      "colorGroup": "Red",
+      "description": "Vibrant scarlet layer",
+      "highlights": [
+        {
+          "id": "wild-rider-red",
+          "descriptor": "Bright"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Burning Orange",
+        "derivedDescriptor": "Vibrant Warm"
+      }
+    },
+    {
+      "id": "stormfiend",
+      "name": "Stormfiend",
+      "type": "Contrast",
+      "hex": "#1D526B",
+      "colorGroup": "Teal",
+      "description": "Rich, deep blue-green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "sotek-green",
+          "descriptor": "Teal Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "wild-rider-red",
+      "name": "Wild Rider Red",
+      "type": "Layer",
+      "hex": "#E82E1B",
+      "colorGroup": "Red",
+      "description": "Very bright orange-red layer",
+      "highlights": [
+        {
+          "id": "fire-dragon-bright",
+          "descriptor": "Extreme Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Pure Red",
+        "derivedDescriptor": "Bright Neutral"
+      }
+    },
+    {
+      "id": "fulgurite-copper",
+      "name": "Fulgurite Copper",
+      "type": "Layer Metallic",
+      "hex": "#F3805B",
+      "colorGroup": "Metallic",
+      "description": "Bright vibrant copper metallic layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "stormhost-silver",
+          "descriptor": "Extreme Highlight"
+        }
+      ]
+    },
+    {
+      "id": "fire-dragon-bright",
+      "name": "Fire Dragon Bright",
+      "type": "Layer",
+      "hex": "#F49126",
+      "colorGroup": "Orange",
+      "description": "Bold orange highlight layer",
+      "highlights": []
+    },
+    {
+      "id": "wazdakka-red",
+      "name": "Wazdakka Red",
+      "type": "Layer",
+      "hex": "#880804",
+      "colorGroup": "Red",
+      "description": "Moody warm red layer",
+      "highlights": [
+        {
+          "id": "squig-orange",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "macragge-blue",
+      "name": "Macragge Blue",
+      "type": "Base",
+      "hex": "#0D4074",
+      "colorGroup": "Blue",
+      "description": "Standard royal blue base",
+      "shades": [
+        "nuln-oil",
+        "drakenhof-nightshade"
+      ],
+      "highlights": [
+        {
+          "id": "altdorf-guard-blue",
+          "descriptor": "Vibrant Blue"
+        },
+        {
+          "id": "calgar-blue",
+          "descriptor": "Subdued/Matte"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Classic Royal"
+      }
+    },
+    {
+      "id": "nuln-oil",
+      "name": "Nuln Oil",
+      "type": "Shade",
+      "hex": "#161616",
+      "colorGroup": "Black",
+      "description": "Classic black wash",
+      "highlights": []
+    },
+    {
+      "id": "drakenhof-nightshade",
+      "name": "Drakenhof Nightshade",
+      "type": "Shade",
+      "hex": "#121C34",
+      "colorGroup": "Blue",
+      "description": "Deep midnight blue wash",
+      "highlights": []
+    },
+    {
+      "id": "altdorf-guard-blue",
+      "name": "Altdorf Guard Blue",
+      "type": "Layer",
+      "hex": "#114584",
+      "colorGroup": "Blue",
+      "description": "Vibrant royal blue layer",
+      "highlights": [
+        {
+          "id": "calgar-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Ultramarine Blue",
+        "derivedDescriptor": "Vibrant Primary"
+      }
+    },
+    {
+      "id": "calgar-blue",
+      "name": "Calgar Blue",
+      "type": "Layer",
+      "hex": "#2B4D73",
+      "colorGroup": "Blue",
+      "description": "Subdued bright blue layer",
+      "highlights": [
+        {
+          "id": "fenrisian-grey",
+          "descriptor": "Extreme Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Deep Blue",
+        "derivedDescriptor": "Cool Saturated"
+      }
+    },
+    {
+      "id": "fenrisian-grey",
+      "name": "Fenrisian Grey",
+      "type": "Layer",
+      "hex": "#6D94B3",
+      "colorGroup": "Blue/Grey",
+      "description": "Light ice blue/grey layer",
+      "highlights": [
+        {
+          "id": "blue-horror",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "baal-red",
+      "name": "Baal Red",
+      "type": "Contrast",
+      "hex": "#C2191F",
+      "colorGroup": "Red",
+      "description": "Bold bright red contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "evil-sunz-scarlet",
+          "descriptor": "Vibrant Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading.",
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Pure Red",
+        "derivedDescriptor": "High Saturation"
+      }
+    },
+    {
+      "id": "imperial-fist",
+      "name": "Imperial Fist",
+      "type": "Contrast",
+      "hex": "#F9DC00",
+      "colorGroup": "Yellow",
+      "description": "Vibrant primary yellow contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "flash-gitz-yellow",
+          "descriptor": "Edge Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "flash-gitz-yellow",
+      "name": "Flash Gitz Yellow",
+      "type": "Layer",
+      "hex": "#FFF300",
+      "colorGroup": "Yellow",
+      "description": "Extremely bright yellow layer",
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Daemonic Yellow",
+        "derivedDescriptor": "Pure Vibrant"
+      }
+    },
+    {
+      "id": "caliban-green",
+      "name": "Caliban Green",
+      "type": "Base",
+      "hex": "#003D15",
+      "colorGroup": "Green",
+      "description": "Deep forest green base",
+      "shades": [
+        "biel-tan-green",
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "warpstone-glow",
+          "descriptor": "Vibrant Green"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Angel Green",
+        "derivedDescriptor": "Dark Military"
+      }
+    },
+    {
+      "id": "warpstone-glow",
+      "name": "Warpstone Glow",
+      "type": "Layer",
+      "hex": "#1E7332",
+      "colorGroup": "Green",
+      "description": "Intense bright green layer",
+      "highlights": [
+        {
+          "id": "moot-green",
+          "descriptor": "Bright Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greenskin",
+        "derivedDescriptor": "Vibrant Mid-tone"
+      }
+    },
+    {
+      "id": "moot-green",
+      "name": "Moot Green",
+      "type": "Layer",
+      "hex": "#39AD2C",
+      "colorGroup": "Green",
+      "description": "Bright neon green highlight",
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Jungle Green",
+        "derivedDescriptor": "Electric Green"
+      }
+    },
+    {
+      "id": "biel-tan-green",
+      "name": "Biel-Tan Green",
+      "type": "Shade",
+      "hex": "#134B29",
+      "colorGroup": "Green",
+      "description": "Vibrant forest green wash",
+      "highlights": []
+    },
+    {
+      "id": "leadbelcher",
+      "name": "Leadbelcher",
+      "type": "Base Metallic",
+      "hex": "#888D8F",
+      "colorGroup": "Metallic",
+      "description": "Gritty iron/steel base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "ironbreaker",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Plate Mail Metal",
+        "derivedDescriptor": "Realistic Steel"
+      }
+    },
+    {
+      "id": "ironbreaker",
+      "name": "Ironbreaker",
+      "type": "Layer Metallic",
+      "hex": "#A2A7A8",
+      "colorGroup": "Metallic",
+      "description": "Bright silver/iron layer",
+      "highlights": [
+        {
+          "id": "stormhost-silver",
+          "descriptor": "Extreme Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Mithril",
+        "derivedDescriptor": "Bright Silver"
+      }
+    },
+    {
+      "id": "stormhost-silver",
+      "name": "Stormhost Silver",
+      "type": "Layer Metallic",
+      "hex": "#DEDEDE",
+      "colorGroup": "Metallic",
+      "description": "Pure bright silver highlight",
+      "highlights": [],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Shining Silver",
+        "derivedDescriptor": "Brilliant Chrome"
+      }
+    },
+    {
+      "id": "retributor-armour",
+      "name": "Retributor Armour",
+      "type": "Base Metallic",
+      "hex": "#C39E81",
+      "colorGroup": "Metallic",
+      "description": "Rich lustrous gold base",
+      "shades": [
+        "reikland-fleshshade"
+      ],
+      "highlights": [
+        {
+          "id": "auric-armour-gold",
+          "descriptor": "Bright Gold"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Greedy Gold",
+        "derivedDescriptor": "Warm Rich Gold"
+      }
+    },
+    {
+      "id": "auric-armour-gold",
+      "name": "Auric Armour Gold",
+      "type": "Layer Metallic",
+      "hex": "#DDA944",
+      "colorGroup": "Metallic",
+      "description": "Bright vibrant gold layer",
+      "highlights": [
+        {
+          "id": "liberator-gold",
+          "descriptor": "Pale Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Bright Gold",
+        "derivedDescriptor": "Polished Brass"
+      }
+    },
+    {
+      "id": "liberator-gold",
+      "name": "Liberator Gold",
+      "type": "Layer Metallic",
+      "hex": "#D4BB8E",
+      "colorGroup": "Metallic",
+      "description": "Pale satin gold highlight",
+      "highlights": []
+    },
+    {
+      "id": "reikland-fleshshade",
+      "name": "Reikland Fleshshade",
+      "type": "Shade",
+      "hex": "#673523",
+      "colorGroup": "Flesh",
+      "description": "Warm reddish-brown wash",
+      "highlights": []
+    },
+    {
+      "id": "corax-white",
+      "name": "Corax White",
+      "type": "Base",
+      "hex": "#FFFFFF",
+      "colorGroup": "White",
+      "description": "Crisp neutral white base",
+      "shades": [
+        "apothecary-white"
+      ],
+      "highlights": [
+        {
+          "id": "white-scar",
+          "descriptor": "Pure Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Matt White",
+        "derivedDescriptor": "Clean Neutral"
+      }
+    },
+    {
+      "id": "white-scar",
+      "name": "White Scar",
+      "type": "Layer",
+      "hex": "#FFFFFF",
+      "colorGroup": "White",
+      "description": "Purest crisp white layer",
+      "highlights": []
+    },
+    {
+      "id": "ulthuan-grey",
+      "name": "Ulthuan Grey",
+      "type": "Layer",
+      "hex": "#C4DDD5",
+      "colorGroup": "White/Grey",
+      "description": "Cool pale white-grey layer",
+      "highlights": [
+        {
+          "id": "white-scar",
+          "descriptor": "Fine Highlight"
+        }
+      ]
+    },
+    {
+      "id": "apothecary-white",
+      "name": "Apothecary White",
+      "type": "Contrast",
+      "hex": "#E1E9E9",
+      "colorGroup": "White",
+      "description": "Shaded white contrast",
+      "highlights": [],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "abaddon-black",
+      "name": "Abaddon Black",
+      "type": "Base",
+      "hex": "#000000",
+      "colorGroup": "Black",
+      "description": "Pure matte black base",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "eshin-grey",
+          "descriptor": "Dark Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Matt Black",
+        "derivedDescriptor": "Absolute Black"
+      }
+    },
+    {
+      "id": "eshin-grey",
+      "name": "Eshin Grey",
+      "type": "Layer",
+      "hex": "#484E51",
+      "colorGroup": "Grey",
+      "description": "Dark grey edge highlight",
+      "highlights": [
+        {
+          "id": "dawnstone",
+          "descriptor": "Mid Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Hardened Steel",
+        "derivedDescriptor": "Dark Charcoal"
+      }
+    },
+    {
+      "id": "dawnstone",
+      "name": "Dawnstone",
+      "type": "Layer",
+      "hex": "#697068",
+      "colorGroup": "Grey",
+      "description": "Medium cold grey layer",
+      "highlights": [
+        {
+          "id": "administratum-grey",
+          "descriptor": "Layer Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Castle Grey",
+        "derivedDescriptor": "Solid Neutral Grey"
+      }
+    },
+    {
+      "id": "zandri-dust",
+      "name": "Zandri Dust",
+      "type": "Base",
+      "hex": "#988E56",
+      "colorGroup": "Bone/Tan",
+      "description": "Sandy desert tan base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "ushabti-bone",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Desert Yellow",
+        "derivedDescriptor": "Aged Sand"
+      }
+    },
+    {
+      "id": "ushabti-bone",
+      "name": "Ushabti Bone",
+      "type": "Layer",
+      "hex": "#B1AD76",
+      "colorGroup": "Bone",
+      "description": "Warm ivory bone layer",
+      "highlights": [
+        {
+          "id": "screaming-skull",
+          "descriptor": "Pale Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Skeleton Bone",
+        "derivedDescriptor": "Realistic Bone"
+      }
+    },
+    {
+      "id": "screaming-skull",
+      "name": "Screaming Skull",
+      "type": "Layer",
+      "hex": "#E0CF9E",
+      "colorGroup": "Bone",
+      "description": "Pale bone layer",
+      "highlights": []
+    },
+    {
+      "id": "rakarth-flesh",
+      "name": "Rakarth Flesh",
+      "type": "Base",
+      "hex": "#9C9183",
+      "colorGroup": "Flesh",
+      "description": "Pale necrotic flesh base",
+      "shades": [
+        "reikland-fleshshade"
+      ],
+      "highlights": [
+        {
+          "id": "flayed-one-flesh",
+          "descriptor": "Cold Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Fanatic",
+        "match": "Banshee Brown",
+        "derivedDescriptor": "Pale Undead"
+      }
+    },
+    {
+      "id": "flayed-one-flesh",
+      "name": "Flayed One Flesh",
+      "type": "Layer",
+      "hex": "#CBB48B",
+      "colorGroup": "Flesh",
+      "description": "Sickly pale yellow-flesh layer",
+      "highlights": [
+        {
+          "id": "pallid-wych-flesh",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "averland-sunset",
+      "name": "Averland Sunset",
+      "type": "Base",
+      "hex": "#FCAE05",
+      "colorGroup": "Yellow",
+      "description": "Warm mustard yellow base",
+      "shades": [
+        "casandora-yellow",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "yriel-yellow",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "balthasar-gold",
+      "name": "Balthasar Gold",
+      "type": "Base Metallic",
+      "hex": "#A47452",
+      "colorGroup": "Metallic",
+      "description": "Deep dark bronze/gold base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "gehennas-gold",
+          "descriptor": "Standard Highlight"
+        },
+        {
+          "id": "sycorax-bronze",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "bugmans-glow",
+      "name": "Bugman's Glow",
+      "type": "Base",
+      "hex": "#804C43",
+      "colorGroup": "Flesh",
+      "description": "Dark ruddy flesh base",
+      "shades": [
+        "reikland-fleshshade"
+      ],
+      "highlights": [
+        {
+          "id": "cadian-fleshtone",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "castellax-bronze",
+      "name": "Castellax Bronze",
+      "type": "Base Metallic",
+      "hex": "#B5734A",
+      "colorGroup": "Metallic",
+      "description": "Rich dark bronze base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "sycorax-bronze",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "castellan-green",
+      "name": "Castellan Green",
+      "type": "Base",
+      "hex": "#304921",
+      "colorGroup": "Green",
+      "description": "Dark olive green base",
+      "shades": [
+        "athonian-camoshade"
+      ],
+      "highlights": [
+        {
+          "id": "loren-forest",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "celestra-grey",
+      "name": "Celestra Grey",
+      "type": "Base",
+      "hex": "#8FAEA9",
+      "colorGroup": "White/Grey",
+      "description": "Cool pale grey base",
+      "shades": [
+        "drakenhof-nightshade"
+      ],
+      "highlights": [
+        {
+          "id": "ulthuan-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "corvus-black",
+      "name": "Corvus Black",
+      "type": "Base",
+      "hex": "#121212",
+      "colorGroup": "Black",
+      "description": "Off-black/very dark grey base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "eshin-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "death-guard-green",
+      "name": "Death Guard Green",
+      "type": "Base",
+      "hex": "#737A47",
+      "colorGroup": "Green",
+      "description": "Sickly pale green base",
+      "shades": [
+        "athonian-camoshade",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "elysian-green",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "deathworld-forest",
+      "name": "Deathworld Forest",
+      "type": "Base",
+      "hex": "#5A6536",
+      "colorGroup": "Green",
+      "description": "Muted woodland green base",
+      "shades": [
+        "athonian-camoshade"
+      ],
+      "highlights": [
+        {
+          "id": "elysian-green",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "dryad-bark",
+      "name": "Dryad Bark",
+      "type": "Base",
+      "hex": "#34302C",
+      "colorGroup": "Brown",
+      "description": "Ashen dark brown base",
+      "shades": [
+        "nuln-oil",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "gorthor-brown",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "gal-vorbak-red",
+      "name": "Gal Vorbak Red",
+      "type": "Base",
+      "hex": "#4B212C",
+      "colorGroup": "Red",
+      "description": "Dark bruised red base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "wazdakka-red",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "grey-knights-steel",
+      "name": "Grey Knights Steel",
+      "type": "Base Metallic",
+      "hex": "#7E8C9A",
+      "colorGroup": "Metallic",
+      "description": "Blue-tinted steel base",
+      "shades": [
+        "drakenhof-nightshade"
+      ],
+      "highlights": [
+        {
+          "id": "stormhost-silver",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "incubi-darkness",
+      "name": "Incubi Darkness",
+      "type": "Base",
+      "hex": "#082E32",
+      "colorGroup": "Teal",
+      "description": "Dark brooding turquoise base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "kabalite-green",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "iron-hands-steel",
+      "name": "Iron Hands Steel",
+      "type": "Base Metallic",
+      "hex": "#7A7B7A",
+      "colorGroup": "Metallic",
+      "description": "Dark robust steel base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "ironbreaker",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "iron-warriors",
+      "name": "Iron Warriors",
+      "type": "Base Metallic",
+      "hex": "#504E4A",
+      "colorGroup": "Metallic",
+      "description": "Very dark dull iron base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "leadbelcher",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "jokaero-orange",
+      "name": "Jokaero Orange",
+      "type": "Base",
+      "hex": "#ED3814",
+      "colorGroup": "Orange",
+      "description": "Muted deep orange base",
+      "shades": [
+        "fuegan-orange",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "troll-slayer-orange",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "kantor-blue",
+      "name": "Kantor Blue",
+      "type": "Base",
+      "hex": "#021338",
+      "colorGroup": "Blue",
+      "description": "Deep midnight blue base",
+      "shades": [
+        "nuln-oil",
+        "drakenhof-nightshade"
+      ],
+      "highlights": [
+        {
+          "id": "altdorf-guard-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "khorne-red",
+      "name": "Khorne Red",
+      "type": "Base",
+      "hex": "#650001",
+      "colorGroup": "Red",
+      "description": "Dark bloody crimson base",
+      "shades": [
+        "nuln-oil",
+        "carroburg-crimson"
+      ],
+      "highlights": [
+        {
+          "id": "wazdakka-red",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "lupercal-green",
+      "name": "Lupercal Green",
+      "type": "Base",
+      "hex": "#002B2A",
+      "colorGroup": "Green",
+      "description": "Extremely dark green base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "sons-of-horus-green",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "mechanicus-standard-grey",
+      "name": "Mechanicus Standard Grey",
+      "type": "Base",
+      "hex": "#3A4B4B",
+      "colorGroup": "Grey",
+      "description": "Dark industrial grey base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "dawnstone",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "morghast-bone",
+      "name": "Morghast Bone",
+      "type": "Base",
+      "hex": "#C0A973",
+      "colorGroup": "Bone",
+      "description": "Warm yellow-bone base",
+      "shades": [
+        "seraphim-sepia"
+      ],
+      "highlights": [
+        {
+          "id": "ushabti-bone",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "mournfang-brown",
+      "name": "Mournfang Brown",
+      "type": "Base",
+      "hex": "#611506",
+      "colorGroup": "Brown",
+      "description": "Warm reddish-brown base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "skrag-brown",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "naggaroth-night",
+      "name": "Naggaroth Night",
+      "type": "Base",
+      "hex": "#3D3354",
+      "colorGroup": "Purple",
+      "description": "Very dark purple base",
+      "shades": [
+        "druchii-violet",
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "xereus-purple",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "night-lords-blue",
+      "name": "Night Lords Blue",
+      "type": "Base",
+      "hex": "#001D3A",
+      "colorGroup": "Blue",
+      "description": "Dark navy blue base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "kantor-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "nocturne-green",
+      "name": "Nocturne Green",
+      "type": "Base",
+      "hex": "#132D26",
+      "colorGroup": "Green",
+      "description": "Dark swamp green base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "vulkan-green",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "orruk-flesh",
+      "name": "Orruk Flesh",
+      "type": "Base",
+      "hex": "#8FC776",
+      "colorGroup": "Green",
+      "description": "Bright pale green base",
+      "shades": [
+        "biel-tan-green",
+        "athonian-camoshade"
+      ],
+      "highlights": [
+        {
+          "id": "ogryn-camo",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "ratskin-flesh",
+      "name": "Ratskin Flesh",
+      "type": "Base",
+      "hex": "#A75C46",
+      "colorGroup": "Flesh",
+      "description": "Warm ruddy orange flesh base",
+      "shades": [
+        "reikland-fleshshade"
+      ],
+      "highlights": [
+        {
+          "id": "cadian-fleshtone",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "rhinox-hide",
+      "name": "Rhinox Hide",
+      "type": "Base",
+      "hex": "#472F2B",
+      "colorGroup": "Brown",
+      "description": "Dark muddy brown base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "doombull-brown",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "runelord-brass",
+      "name": "Runelord Brass",
+      "type": "Base Metallic",
+      "hex": "#BBA38F",
+      "colorGroup": "Metallic",
+      "description": "Pale greenish brass base",
+      "shades": [
+        "cryptek-armourshade-gloss",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "canoptek-alloy",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "screamer-pink",
+      "name": "Screamer Pink",
+      "type": "Base",
+      "hex": "#761338",
+      "colorGroup": "Purple/Pink",
+      "description": "Dark magenta base",
+      "shades": [
+        "carroburg-crimson"
+      ],
+      "highlights": [
+        {
+          "id": "pink-horror",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "steel-legion-drab",
+      "name": "Steel Legion Drab",
+      "type": "Base",
+      "hex": "#584E3A",
+      "colorGroup": "Brown",
+      "description": "Muted khaki brown base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "baneblade-brown",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "stegadon-scale-green",
+      "name": "Stegadon Scale Green",
+      "type": "Base",
+      "hex": "#063A48",
+      "colorGroup": "Teal",
+      "description": "Dark greenish-blue base",
+      "shades": [
+        "coelia-greenshade",
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "sotek-green",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "sylvaneth-bark",
+      "name": "Sylvaneth Bark",
+      "type": "Base",
+      "hex": "#3E3731",
+      "colorGroup": "Brown",
+      "description": "Muted dark brown base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "gorthor-brown",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "the-fang",
+      "name": "The Fang",
+      "type": "Base",
+      "hex": "#405B71",
+      "colorGroup": "Blue/Grey",
+      "description": "Dark slate blue base",
+      "shades": [
+        "drakenhof-nightshade",
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "russ-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "thousand-sons-blue",
+      "name": "Thousand Sons Blue",
+      "type": "Base",
+      "hex": "#00506F",
+      "colorGroup": "Blue",
+      "description": "Rich teal-blue base",
+      "shades": [
+        "drakenhof-nightshade",
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "ahriman-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "waaagh-flesh",
+      "name": "Waaagh! Flesh",
+      "type": "Base",
+      "hex": "#1F5429",
+      "colorGroup": "Green",
+      "description": "Dark olive orc green base",
+      "shades": [
+        "biel-tan-green",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "warboss-green",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "wraithbone",
+      "name": "Wraithbone",
+      "type": "Base",
+      "hex": "#DBD1B2",
+      "colorGroup": "Bone",
+      "description": "Warm off-white base layer",
+      "shades": [
+        "seraphim-sepia",
+        "skeleton-horde"
+      ],
+      "highlights": [
+        {
+          "id": "screaming-skull",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "ahriman-blue",
+      "name": "Ahriman Blue",
+      "type": "Layer",
+      "hex": "#00708A",
+      "colorGroup": "Blue",
+      "description": "Bright teal-blue layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "alaitoc-blue",
+      "name": "Alaitoc Blue",
+      "type": "Layer",
+      "hex": "#1B3B6C",
+      "colorGroup": "Blue",
+      "description": "Deep blue layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "balor-brown",
+      "name": "Balor Brown",
+      "type": "Layer",
+      "hex": "#8A5424",
+      "colorGroup": "Brown",
+      "description": "Light tan brown layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "baneblade-brown",
+      "name": "Baneblade Brown",
+      "type": "Layer",
+      "hex": "#907B64",
+      "colorGroup": "Brown",
+      "description": "Medium khaki layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "bloodcaller-red",
+      "name": "Bloodcaller Red",
+      "type": "Layer",
+      "hex": "#88151D",
+      "colorGroup": "Red",
+      "description": "Dark red layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "cadian-fleshtone",
+      "name": "Cadian Fleshtone",
+      "type": "Layer",
+      "hex": "#C97A5E",
+      "colorGroup": "Flesh",
+      "description": "Warm healthy skin layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "kislev-flesh",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "canoptek-alloy",
+      "name": "Canoptek Alloy",
+      "type": "Layer Metallic",
+      "hex": "#BACCC0",
+      "colorGroup": "Metallic",
+      "description": "Silver-green brass highlight",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "doombull-brown",
+      "name": "Doombull Brown",
+      "type": "Layer",
+      "hex": "#572C21",
+      "colorGroup": "Brown",
+      "description": "Warm ruddy brown layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "elysian-green",
+      "name": "Elysian Green",
+      "type": "Layer",
+      "hex": "#728345",
+      "colorGroup": "Green",
+      "description": "Light olive green layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "gehennas-gold",
+      "name": "Gehenna's Gold",
+      "type": "Layer Metallic",
+      "hex": "#BC6B10",
+      "colorGroup": "Metallic",
+      "description": "Rich warm gold layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "auric-armour-gold",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "genestealer-purple",
+      "name": "Genestealer Purple",
+      "type": "Layer",
+      "hex": "#7658A5",
+      "colorGroup": "Purple",
+      "description": "Vibrant pink-purple layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "gorthor-brown",
+      "name": "Gorthor Brown",
+      "type": "Layer",
+      "hex": "#5F463F",
+      "colorGroup": "Brown",
+      "description": "Warm ashen brown layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "baneblade-brown",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "kabalite-green",
+      "name": "Kabalite Green",
+      "type": "Layer",
+      "hex": "#008962",
+      "colorGroup": "Teal",
+      "description": "Vibrant green-teal layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "sybarite-green",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "kislev-flesh",
+      "name": "Kislev Flesh",
+      "type": "Layer",
+      "hex": "#D1A570",
+      "colorGroup": "Flesh",
+      "description": "Light peach skin layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "flayed-one-flesh",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "loren-forest",
+      "name": "Loren Forest",
+      "type": "Layer",
+      "hex": "#4D6B33",
+      "colorGroup": "Green",
+      "description": "Warm olive green layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "straken-green",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "ogryn-camo",
+      "name": "Ogryn Camo",
+      "type": "Layer",
+      "hex": "#92A549",
+      "colorGroup": "Green",
+      "description": "Pale yellow-green layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "pallid-wych-flesh",
+      "name": "Pallid Wych Flesh",
+      "type": "Layer",
+      "hex": "#CCCCBB",
+      "colorGroup": "Flesh",
+      "description": "Extremely pale ivory flesh",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "pink-horror",
+      "name": "Pink Horror",
+      "type": "Layer",
+      "hex": "#8E2757",
+      "colorGroup": "Purple/Pink",
+      "description": "Vibrant magenta layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "emperors-children",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "russ-grey",
+      "name": "Russ Grey",
+      "type": "Layer",
+      "hex": "#507085",
+      "colorGroup": "Blue/Grey",
+      "description": "Cool slate grey layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "fenrisian-grey",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "skrag-brown",
+      "name": "Skrag Brown",
+      "type": "Layer",
+      "hex": "#8C4A11",
+      "colorGroup": "Brown",
+      "description": "Vibrant orange-brown layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "deathclaw-brown",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "sons-of-horus-green",
+      "name": "Sons of Horus Green",
+      "type": "Layer",
+      "hex": "#00545E",
+      "colorGroup": "Green",
+      "description": "Sea-green layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "sotek-green",
+      "name": "Sotek Green",
+      "type": "Layer",
+      "hex": "#0B6371",
+      "colorGroup": "Teal",
+      "description": "Vibrant blue-teal layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "temple-guard-blue",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "sybarite-green",
+      "name": "Sybarite Green",
+      "type": "Layer",
+      "hex": "#17A166",
+      "colorGroup": "Teal",
+      "description": "Bright green-teal edge",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "sycorax-bronze",
+      "name": "Sycorax Bronze",
+      "type": "Layer Metallic",
+      "hex": "#C9A171",
+      "colorGroup": "Metallic",
+      "description": "Pale aged bronze layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "teclis-blue",
+      "name": "Teclis Blue",
+      "type": "Layer",
+      "hex": "#2772AF",
+      "colorGroup": "Blue",
+      "description": "Bright cerulean blue layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "lothern-blue",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "troll-slayer-orange",
+      "name": "Troll Slayer Orange",
+      "type": "Layer",
+      "hex": "#E65A2E",
+      "colorGroup": "Orange",
+      "description": "Bright vibrant orange layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "fire-dragon-bright",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "vulkan-green",
+      "name": "Vulkan Green",
+      "type": "Layer",
+      "hex": "#223C2E",
+      "colorGroup": "Green",
+      "description": "Dark rich green layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "warboss-green",
+      "name": "Warboss Green",
+      "type": "Layer",
+      "hex": "#317E57",
+      "colorGroup": "Green",
+      "description": "Vibrant mid-green layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "skarsnik-green",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "xereus-purple",
+      "name": "Xereus Purple",
+      "type": "Layer",
+      "hex": "#471F5E",
+      "colorGroup": "Purple",
+      "description": "Rich royal purple layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "genestealer-purple",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "yriel-yellow",
+      "name": "Yriel Yellow",
+      "type": "Layer",
+      "hex": "#FFD900",
+      "colorGroup": "Yellow",
+      "description": "Bright golden yellow layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "flash-gitz-yellow",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "athonian-camoshade",
+      "name": "Athonian Camoshade",
+      "type": "Shade",
+      "hex": "#434D27",
+      "colorGroup": "Green",
+      "description": "Earthy green wash",
+      "highlights": []
+    },
+    {
+      "id": "casandora-yellow",
+      "name": "Casandora Yellow",
+      "type": "Shade",
+      "hex": "#D37324",
+      "colorGroup": "Yellow",
+      "description": "Warm yellow-orange wash",
+      "highlights": []
+    },
+    {
+      "id": "coelia-greenshade",
+      "name": "Coelia Greenshade",
+      "type": "Shade",
+      "hex": "#0D4645",
+      "colorGroup": "Teal",
+      "description": "Dark cyan/teal wash",
+      "highlights": []
+    },
+    {
+      "id": "druchii-violet",
+      "name": "Druchii Violet",
+      "type": "Shade",
+      "hex": "#301A39",
+      "colorGroup": "Purple",
+      "description": "Dark royal purple wash",
+      "highlights": []
+    },
+    {
+      "id": "fuegan-orange",
+      "name": "Fuegan Orange",
+      "type": "Shade",
+      "hex": "#A8361B",
+      "colorGroup": "Orange",
+      "description": "Deep fiery orange wash",
+      "highlights": []
+    },
+    {
+      "id": "seraphim-sepia",
+      "name": "Seraphim Sepia",
+      "type": "Shade",
+      "hex": "#844E20",
+      "colorGroup": "Brown",
+      "description": "Warm sepia wash",
+      "highlights": []
+    },
+    {
+      "id": "basilicanum-grey",
+      "name": "Basilicanum Grey",
+      "type": "Contrast",
+      "hex": "#4D4F4E",
+      "colorGroup": "Grey",
+      "description": "Dark cool grey contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "dawnstone",
+          "descriptor": "Grey Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "black-templar",
+      "name": "Black Templar",
+      "type": "Contrast",
+      "hex": "#1A1A1A",
+      "colorGroup": "Black",
+      "description": "Deep black contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "eshin-grey",
+          "descriptor": "Edge Highlight"
+        }
+      ],
+      "crossRange": {
+        "range": "Army Painter Speedpaint",
+        "match": "Grim Black",
+        "derivedDescriptor": "Opaque Black Flow"
+      },
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "blood-angels-red",
+      "name": "Blood Angels Red",
+      "type": "Contrast",
+      "hex": "#8A121C",
+      "colorGroup": "Red",
+      "description": "Deep crimson red contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "wazdakka-red",
+          "descriptor": "Mid Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "cygor-brown",
+      "name": "Cygor Brown",
+      "type": "Contrast",
+      "hex": "#3A2B27",
+      "colorGroup": "Brown",
+      "description": "Very dark brown contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "gorthor-brown",
+          "descriptor": "Leather Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "dark-angels-green",
+      "name": "Dark Angels Green",
+      "type": "Contrast",
+      "hex": "#0D2E18",
+      "colorGroup": "Green",
+      "description": "Dark forest green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "warpstone-glow",
+          "descriptor": "Vibrant Edge"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "flesh-tearers-red",
+      "name": "Flesh Tearers Red",
+      "type": "Contrast",
+      "hex": "#4A0E13",
+      "colorGroup": "Red",
+      "description": "Dark burgundy/red contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "khorne-red",
+          "descriptor": "Rich Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "gore-grunta-fur",
+      "name": "Gore-Grunta Fur",
+      "type": "Contrast",
+      "hex": "#5F3A1D",
+      "colorGroup": "Brown",
+      "description": "Warm reddish-brown contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "skrag-brown",
+          "descriptor": "Warm Leather"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "guilliman-flesh",
+      "name": "Guilliman Flesh",
+      "type": "Contrast",
+      "hex": "#BB8C77",
+      "colorGroup": "Flesh",
+      "description": "Warm skin-tone contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "cadian-fleshtone",
+          "descriptor": "Skin Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "ironjawz-yellow",
+      "name": "Ironjawz Yellow",
+      "type": "Contrast",
+      "hex": "#DEB11E",
+      "colorGroup": "Yellow",
+      "description": "Warm ochre-yellow contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "yriel-yellow",
+          "descriptor": "Warm Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "leviadon-blue",
+      "name": "Leviadon Blue",
+      "type": "Contrast",
+      "hex": "#16203D",
+      "colorGroup": "Blue",
+      "description": "Extremely dark blue contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "altdorf-guard-blue",
+          "descriptor": "Vibrant Edge"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "ork-flesh",
+      "name": "Ork Flesh",
+      "type": "Contrast",
+      "hex": "#255F37",
+      "colorGroup": "Green",
+      "description": "Vibrant orc skin contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "warboss-green",
+          "descriptor": "Skin Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "skeleton-horde",
+      "name": "Skeleton Horde",
+      "type": "Contrast",
+      "hex": "#B19974",
+      "colorGroup": "Bone",
+      "description": "Aged bone contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "ushabti-bone",
+          "descriptor": "Bone Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "snakebite-leather",
+      "name": "Snakebite Leather",
+      "type": "Contrast",
+      "hex": "#825526",
+      "colorGroup": "Brown",
+      "description": "Light tan-leather contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "balor-brown",
+          "descriptor": "Light Leather"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "talassar-blue",
+      "name": "Talassar Blue",
+      "type": "Contrast",
+      "hex": "#0D5AA6",
+      "colorGroup": "Blue",
+      "description": "Vibrant marine blue contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "calgar-blue",
+          "descriptor": "Edge Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "terradon-turquoise",
+      "name": "Terradon Turquoise",
+      "type": "Contrast",
+      "hex": "#155959",
+      "colorGroup": "Teal",
+      "description": "Deep cyan/turquoise contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "sotek-green",
+          "descriptor": "Teal Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "ultramarines-blue",
+      "name": "Ultramarines Blue",
+      "type": "Contrast",
+      "hex": "#1E4B89",
+      "colorGroup": "Blue",
+      "description": "Standard royal blue contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "calgar-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "volupus-pink",
+      "name": "Volupus Pink",
+      "type": "Contrast",
+      "hex": "#761942",
+      "colorGroup": "Purple/Pink",
+      "description": "Deep magenta/pink contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "pink-horror",
+          "descriptor": "Vibrant Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "wyldwood",
+      "name": "Wyldwood",
+      "type": "Contrast",
+      "hex": "#3A2A22",
+      "colorGroup": "Brown",
+      "description": "Dark cool wood brown contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "gorthor-brown",
+          "descriptor": "Wood Grain Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "catachan-fleshtone",
+      "name": "Catachan Fleshtone",
+      "type": "Base",
+      "hex": "#643E33",
+      "colorGroup": "Flesh",
+      "description": "Dark, tanned flesh base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "bloodreaver-flesh",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "caledor-sky",
+      "name": "Caledor Sky",
+      "type": "Base",
+      "hex": "#365B86",
+      "colorGroup": "Blue",
+      "description": "Rich, vibrant mid-blue base",
+      "shades": [
+        "drakenhof-nightshade"
+      ],
+      "highlights": [
+        {
+          "id": "teclis-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "screaming-bell",
+      "name": "Screaming Bell",
+      "type": "Base Metallic",
+      "hex": "#C16F45",
+      "colorGroup": "Metallic",
+      "description": "Bright, coppery brass base",
+      "shades": [
+        "reikland-fleshshade",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "hashut-copper",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "warplock-bronze",
+      "name": "Warplock Bronze",
+      "type": "Base Metallic",
+      "hex": "#72524C",
+      "colorGroup": "Metallic",
+      "description": "Very dark, aged bronze base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "brass-scorpion",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "xv88",
+      "name": "XV88",
+      "type": "Base",
+      "hex": "#714C27",
+      "colorGroup": "Brown",
+      "description": "Warm, mustard-brown base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "tau-light-ochre",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "skavenblight-dinge",
+      "name": "Skavenblight Dinge",
+      "type": "Base",
+      "hex": "#4B4646",
+      "colorGroup": "Grey",
+      "description": "Dark, grimy brownish-grey base",
+      "shades": [
+        "nuln-oil",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "stormvermin-fur",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "stormvermin-fur",
+      "name": "Stormvermin Fur",
+      "type": "Base",
+      "hex": "#6D655F",
+      "colorGroup": "Grey",
+      "description": "Mid-tone warm grey base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "karak-stone",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "grey-seer",
+      "name": "Grey Seer",
+      "type": "Base",
+      "hex": "#A2A5A4",
+      "colorGroup": "Grey",
+      "description": "Cool, pale grey base designed for Contrast paints",
+      "shades": [
+        "basilicanum-grey"
+      ],
+      "highlights": [
+        {
+          "id": "ulthuan-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "barak-nar-burgundy",
+      "name": "Barak-Nar Burgundy",
+      "type": "Base",
+      "hex": "#421C2B",
+      "colorGroup": "Purple/Red",
+      "description": "Deep, cool burgundy base",
+      "shades": [
+        "nuln-oil"
+      ],
+      "highlights": [
+        {
+          "id": "pink-horror",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "daemonette-hide",
+      "name": "Daemonette Hide",
+      "type": "Base",
+      "hex": "#655E7A",
+      "colorGroup": "Purple/Grey",
+      "description": "Muted, pale purple-grey base",
+      "shades": [
+        "druchii-violet"
+      ],
+      "highlights": [
+        {
+          "id": "warpfiend-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "word-bearers-red",
+      "name": "Word Bearers Red",
+      "type": "Base",
+      "hex": "#5D2B28",
+      "colorGroup": "Red",
+      "description": "Dark, muted crimson-brown base",
+      "shades": [
+        "nuln-oil",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "wazdakka-red",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "ionrach-skin",
+      "name": "Ionrach Skin",
+      "type": "Base",
+      "hex": "#9B9E90",
+      "colorGroup": "Flesh",
+      "description": "Pale, sickly green-grey flesh base",
+      "shades": [
+        "coelia-greenshade",
+        "reikland-fleshshade"
+      ],
+      "highlights": [
+        {
+          "id": "deepkin-ash",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "deepkin-ash",
+      "name": "Deepkin Ash",
+      "type": "Base",
+      "hex": "#B1B5A6",
+      "colorGroup": "Grey/Green",
+      "description": "Very pale, cold green-grey base",
+      "shades": [
+        "coelia-greenshade"
+      ],
+      "highlights": [
+        {
+          "id": "pallid-wych-flesh",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "death-korps-drab",
+      "name": "Death Korps Drab",
+      "type": "Base",
+      "hex": "#3A423C",
+      "colorGroup": "Green/Brown",
+      "description": "Dark, muted grey-green drab base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "baneblade-brown",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "thondia-brown",
+      "name": "Thondia Brown",
+      "type": "Base",
+      "hex": "#432E27",
+      "colorGroup": "Brown",
+      "description": "Rich, dark warm brown base",
+      "shades": [
+        "nuln-oil",
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "doombull-brown",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "hobgrot-slit",
+      "name": "Hobgrot Slit",
+      "type": "Base",
+      "hex": "#A2903C",
+      "colorGroup": "Yellow/Green",
+      "description": "Sickly, muted yellow-green base",
+      "shades": [
+        "agrax-earthshade"
+      ],
+      "highlights": [
+        {
+          "id": "ushabti-bone",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "kroak-green",
+      "name": "Kroak Green",
+      "type": "Shade",
+      "hex": "#1A4138",
+      "colorGroup": "Green",
+      "description": "Dark, moody green wash",
+      "highlights": []
+    },
+    {
+      "id": "poxwalker",
+      "name": "Poxwalker",
+      "type": "Shade",
+      "hex": "#5C674E",
+      "colorGroup": "Green",
+      "description": "Sickly, necrotic green wash",
+      "highlights": []
+    },
+    {
+      "id": "targor-rageshade",
+      "name": "Targor Rageshade",
+      "type": "Shade",
+      "hex": "#635252",
+      "colorGroup": "Flesh",
+      "description": "Pale, bruised reddish-grey wash",
+      "highlights": []
+    },
+    {
+      "id": "mortarion-grime",
+      "name": "Mortarion Grime",
+      "type": "Shade",
+      "hex": "#7E754F",
+      "colorGroup": "Yellow/Brown",
+      "description": "Gritty, yellowish-brown grime wash",
+      "highlights": []
+    },
+    {
+      "id": "tyran-blue",
+      "name": "Tyran Blue",
+      "type": "Shade",
+      "hex": "#1B3F77",
+      "colorGroup": "Blue",
+      "description": "Vibrant, deep blue wash",
+      "highlights": []
+    },
+    {
+      "id": "berserker-bloodshade",
+      "name": "Berserker Bloodshade",
+      "type": "Shade",
+      "hex": "#831919",
+      "colorGroup": "Red",
+      "description": "Rich, vivid red wash",
+      "highlights": []
+    },
+    {
+      "id": "soulblight-grey",
+      "name": "Soulblight Grey",
+      "type": "Shade",
+      "hex": "#8F9396",
+      "colorGroup": "Grey",
+      "description": "Cool, pale grey wash",
+      "highlights": []
+    },
+    {
+      "id": "cryptek-armourshade-gloss",
+      "name": "Cryptek Armourshade Gloss",
+      "type": "Shade",
+      "hex": "#5C3E25",
+      "colorGroup": "Brown",
+      "description": "Glossy, warm brown wash for metallics",
+      "highlights": []
+    },
+    {
+      "id": "iyanden-yellow",
+      "name": "Iyanden Yellow",
+      "type": "Contrast",
+      "hex": "#F5B800",
+      "colorGroup": "Yellow",
+      "description": "Rich, warm yellow contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "yriel-yellow",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "nazdreg-yellow",
+      "name": "Nazdreg Yellow",
+      "type": "Contrast",
+      "hex": "#C99632",
+      "colorGroup": "Yellow/Brown",
+      "description": "Dark mustard yellow/ochre contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "zamesi-desert",
+          "descriptor": "Ochre Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "gryph-hound-orange",
+      "name": "Gryph-Hound Orange",
+      "type": "Contrast",
+      "hex": "#C94C24",
+      "colorGroup": "Orange",
+      "description": "Deep earthy orange contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "troll-slayer-orange",
+          "descriptor": "Vibrant Edge"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "shyish-purple",
+      "name": "Shyish Purple",
+      "type": "Contrast",
+      "hex": "#311636",
+      "colorGroup": "Purple",
+      "description": "Extremely dark royal purple contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "xereus-purple",
+          "descriptor": "Rich Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "magos-purple",
+      "name": "Magos Purple",
+      "type": "Contrast",
+      "hex": "#9E678A",
+      "colorGroup": "Purple/Pink",
+      "description": "Light, muted pastel pink/purple contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "pink-horror",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "akhelian-green",
+      "name": "Akhelian Green",
+      "type": "Contrast",
+      "hex": "#14555B",
+      "colorGroup": "Teal",
+      "description": "Deep ocean blue-green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "sotek-green",
+          "descriptor": "Teal Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "aethermatic-blue",
+      "name": "Aethermatic Blue",
+      "type": "Contrast",
+      "hex": "#6DB1A5",
+      "colorGroup": "Teal/Blue",
+      "description": "Very pale, ghostly teal contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "temple-guard-blue",
+          "descriptor": "Bright Edge"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "militarum-green",
+      "name": "Militarum Green",
+      "type": "Contrast",
+      "hex": "#5A6237",
+      "colorGroup": "Green",
+      "description": "Muted military olive green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "elysian-green",
+          "descriptor": "Olive Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "plaguebearer-flesh",
+      "name": "Plaguebearer Flesh",
+      "type": "Contrast",
+      "hex": "#8B9550",
+      "colorGroup": "Green/Flesh",
+      "description": "Sickly yellow-green pale flesh contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "nurgling-green",
+          "descriptor": "Sickly Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "space-wolves-grey",
+      "name": "Space Wolves Grey",
+      "type": "Contrast",
+      "hex": "#5B7A8C",
+      "colorGroup": "Blue/Grey",
+      "description": "Cool slate blue-grey contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "russ-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "black-legion",
+      "name": "Black Legion",
+      "type": "Contrast",
+      "hex": "#0F1110",
+      "colorGroup": "Black",
+      "description": "Very dark, opaque black contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "dark-reaper",
+          "descriptor": "Cool Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "ratling-grime",
+      "name": "Ratling Grime",
+      "type": "Contrast",
+      "hex": "#40362C",
+      "colorGroup": "Brown",
+      "description": "Dirty, dark grey-brown contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "baneblade-brown",
+          "descriptor": "Gritty Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "gryph-charger-grey",
+      "name": "Gryph-Charger Grey",
+      "type": "Contrast",
+      "hex": "#7B9296",
+      "colorGroup": "Blue/Grey",
+      "description": "Cool, blue-tinted light grey contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "fenrisian-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "warp-lightning",
+      "name": "Warp Lightning",
+      "type": "Contrast",
+      "hex": "#1E7535",
+      "colorGroup": "Green",
+      "description": "Vibrant, intense mid-green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "moot-green",
+          "descriptor": "Vibrant Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "creed-camo",
+      "name": "Creed Camo",
+      "type": "Contrast",
+      "hex": "#48633B",
+      "colorGroup": "Green",
+      "description": "Rich woodland camouflage green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "skarsnik-green",
+          "descriptor": "Camo Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "striking-scorpion-green",
+      "name": "Striking Scorpion Green",
+      "type": "Contrast",
+      "hex": "#80B843",
+      "colorGroup": "Green",
+      "description": "Extremely bright, yellow-toned green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "moot-green",
+          "descriptor": "Edge Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "darkoath-flesh",
+      "name": "Darkoath Flesh",
+      "type": "Contrast",
+      "hex": "#A8785E",
+      "colorGroup": "Flesh",
+      "description": "Warm, tanned natural skin-tone contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "cadian-fleshtone",
+          "descriptor": "Skin Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "fyreslayer-flesh",
+      "name": "Fyreslayer Flesh",
+      "type": "Contrast",
+      "hex": "#C2735C",
+      "colorGroup": "Flesh",
+      "description": "Ruddy, flushed warm skin-tone contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "kislev-flesh",
+          "descriptor": "Bright Skin Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "magmadroth-flame",
+      "name": "Magmadroth Flame",
+      "type": "Contrast",
+      "hex": "#E45123",
+      "colorGroup": "Orange",
+      "description": "Intense, vivid fire-orange contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "fire-dragon-bright",
+          "descriptor": "Fiery Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "doomfire-magenta",
+      "name": "Doomfire Magenta",
+      "type": "Contrast",
+      "hex": "#A61C4C",
+      "colorGroup": "Purple/Pink",
+      "description": "Incredibly vibrant deep magenta contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "emperors-children",
+          "descriptor": "Vibrant Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "sigvald-burgundy",
+      "name": "Sigvald Burgundy",
+      "type": "Contrast",
+      "hex": "#681F3B",
+      "colorGroup": "Purple/Red",
+      "description": "Rich, dark wine-red/burgundy contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "pink-horror",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "luxion-purple",
+      "name": "Luxion Purple",
+      "type": "Contrast",
+      "hex": "#51286C",
+      "colorGroup": "Purple",
+      "description": "Vibrant mid-tone royal purple contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "xereus-purple",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "leviathan-purple",
+      "name": "Leviathan Purple",
+      "type": "Contrast",
+      "hex": "#301A39",
+      "colorGroup": "Purple",
+      "description": "Extremely dark, opaque deep purple contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "genestealer-purple",
+          "descriptor": "Edge Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "asurmen-blue",
+      "name": "Asurmen Blue",
+      "type": "Contrast",
+      "hex": "#234177",
+      "colorGroup": "Blue",
+      "description": "Rich, classic ultramarine blue contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "calgar-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "frostheart",
+      "name": "Frostheart",
+      "type": "Contrast",
+      "hex": "#5AA3CC",
+      "colorGroup": "Blue",
+      "description": "Vibrant, icy light blue contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "lothern-blue",
+          "descriptor": "Ice Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "kroxigor-scales",
+      "name": "Kroxigor Scales",
+      "type": "Contrast",
+      "hex": "#257B89",
+      "colorGroup": "Teal",
+      "description": "Bright, deep turquoise/teal contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "temple-guard-blue",
+          "descriptor": "Scale Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "briar-queen-chill",
+      "name": "Briar Queen Chill",
+      "type": "Contrast",
+      "hex": "#9FBAB6",
+      "colorGroup": "White/Grey",
+      "description": "Ghostly, pale blue-green chill contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "ulthuan-grey",
+          "descriptor": "Ethereal Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "mantis-warriors-green",
+      "name": "Mantis Warriors Green",
+      "type": "Contrast",
+      "hex": "#7CB835",
+      "colorGroup": "Green",
+      "description": "Bright, yellowish-green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "moot-green",
+          "descriptor": "Vibrant Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "nighthaunt-gloom",
+      "name": "Nighthaunt Gloom",
+      "type": "Contrast",
+      "hex": "#6C8A85",
+      "colorGroup": "Blue/Grey",
+      "description": "Ghostly, desaturated blue-grey contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "ulthuan-grey",
+          "descriptor": "Ethereal Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "garaghaks-sewer",
+      "name": "Garaghak's Sewer",
+      "type": "Contrast",
+      "hex": "#3A2E20",
+      "colorGroup": "Brown",
+      "description": "Extremely dark, dirty brown-black contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "gorthor-brown",
+          "descriptor": "Grime Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "hexwraith-flame",
+      "name": "Hexwraith Flame",
+      "type": "Contrast",
+      "hex": "#6EB66A",
+      "colorGroup": "Green",
+      "description": "Ghostly, bright ethereal green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "moot-green",
+          "descriptor": "Flame Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "karandras-green",
+      "name": "Karandras Green",
+      "type": "Contrast",
+      "hex": "#136336",
+      "colorGroup": "Green",
+      "description": "Rich, vivid mid-tone green contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "warpstone-glow",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "bad-moon-yellow",
+      "name": "Bad Moon Yellow",
+      "type": "Contrast",
+      "hex": "#F0D434",
+      "colorGroup": "Yellow",
+      "description": "Incredibly bright, vibrant primary yellow contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "flash-gitz-yellow",
+          "descriptor": "Vibrant Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "gutrippa-flesh",
+      "name": "Gutrippa Flesh",
+      "type": "Contrast",
+      "hex": "#7C8D57",
+      "colorGroup": "Green/Flesh",
+      "description": "Sickly, pale swamp-green flesh contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "nurgling-green",
+          "descriptor": "Sickly Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "aggaros-dunes",
+      "name": "Aggaros Dunes",
+      "type": "Contrast",
+      "hex": "#9B7C46",
+      "colorGroup": "Brown/Yellow",
+      "description": "Warm, sandy ochre-brown contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "tallarn-sand",
+          "descriptor": "Dusty Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "aeldari-emerald",
+      "name": "Aeldari Emerald",
+      "type": "Contrast",
+      "hex": "#007F5C",
+      "colorGroup": "Teal",
+      "description": "Vibrant, rich emerald green/teal contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "sybarite-green",
+          "descriptor": "Edge Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "pylar-glacier",
+      "name": "Pylar Glacier",
+      "type": "Contrast",
+      "hex": "#A4C7CB",
+      "colorGroup": "White/Blue",
+      "description": "Very pale, frosty blue-white contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "white-scar",
+          "descriptor": "Frost Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "celestium-blue",
+      "name": "Celestium Blue",
+      "type": "Contrast",
+      "hex": "#305187",
+      "colorGroup": "Blue",
+      "description": "Deep, cool violet-toned blue contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "calgar-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "dreadful-visage",
+      "name": "Dreadful Visage",
+      "type": "Contrast",
+      "hex": "#B5A7AC",
+      "colorGroup": "Purple/Grey",
+      "description": "Pale, sickly lilac-grey contrast",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "pallid-wych-flesh",
+          "descriptor": "Pale Highlight"
+        }
+      ],
+      "specialLogic": "Contrast paints provide their own shading."
+    },
+    {
+      "id": "skarsnik-green",
+      "name": "Skarsnik Green",
+      "type": "Layer",
+      "hex": "#598C73",
+      "colorGroup": "Green",
+      "description": "Light, muted pale green layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "krieg-khaki",
+          "descriptor": "Pale Edge Highlight"
+        }
+      ]
+    },
+    {
+      "id": "straken-green",
+      "name": "Straken Green",
+      "type": "Layer",
+      "hex": "#62812E",
+      "colorGroup": "Green",
+      "description": "Bright, yellowish olive green layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "nurgling-green",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "nurgling-green",
+      "name": "Nurgling Green",
+      "type": "Layer",
+      "hex": "#849B63",
+      "colorGroup": "Green",
+      "description": "Sickly, pale green highlight layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "krieg-khaki",
+          "descriptor": "Extreme Highlight"
+        }
+      ]
+    },
+    {
+      "id": "krieg-khaki",
+      "name": "Krieg Khaki",
+      "type": "Layer",
+      "hex": "#B1A67B",
+      "colorGroup": "Bone/Tan",
+      "description": "Cool, pale greenish-khaki layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "pallid-wych-flesh",
+          "descriptor": "Pale Highlight"
+        }
+      ]
+    },
+    {
+      "id": "karak-stone",
+      "name": "Karak Stone",
+      "type": "Layer",
+      "hex": "#B7945C",
+      "colorGroup": "Bone/Tan",
+      "description": "Warm, earthy stone/khaki layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "screaming-skull",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "tallarn-sand",
+      "name": "Tallarn Sand",
+      "type": "Layer",
+      "hex": "#A67610",
+      "colorGroup": "Brown",
+      "description": "Warm, mustard-tinted desert sand layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "karak-stone",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "zamesi-desert",
+      "name": "Zamesi Desert",
+      "type": "Layer",
+      "hex": "#DDAA27",
+      "colorGroup": "Yellow/Brown",
+      "description": "Vibrant, warm ochre/yellow-brown layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "ushabti-bone",
+          "descriptor": "Bright Highlight"
+        }
+      ]
+    },
+    {
+      "id": "tau-light-ochre",
+      "name": "Tau Light Ochre",
+      "type": "Layer",
+      "hex": "#BC6E1B",
+      "colorGroup": "Orange/Brown",
+      "description": "Bright, yellowish-orange ochre layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "ungor-flesh",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "squig-orange",
+      "name": "Squig Orange",
+      "type": "Layer",
+      "hex": "#A74D42",
+      "colorGroup": "Orange/Red",
+      "description": "Muted, fleshy red-orange layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "ratskin-flesh",
+          "descriptor": "Flesh Highlight"
+        }
+      ]
+    },
+    {
+      "id": "deathclaw-brown",
+      "name": "Deathclaw Brown",
+      "type": "Layer",
+      "hex": "#B16140",
+      "colorGroup": "Brown",
+      "description": "Rich, vibrant orange-brown leather layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "tau-light-ochre",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "bestigor-flesh",
+      "name": "Bestigor Flesh",
+      "type": "Layer",
+      "hex": "#D08951",
+      "colorGroup": "Flesh",
+      "description": "Warm, golden-tanned skin layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "ungor-flesh",
+          "descriptor": "Pale Skin Highlight"
+        }
+      ]
+    },
+    {
+      "id": "tuskgor-fur",
+      "name": "Tuskgor Fur",
+      "type": "Layer",
+      "hex": "#863231",
+      "colorGroup": "Red/Brown",
+      "description": "Dark, ruddy brick-red/brown layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "deathclaw-brown",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "bloodreaver-flesh",
+      "name": "Bloodreaver Flesh",
+      "type": "Layer",
+      "hex": "#6A4848",
+      "colorGroup": "Flesh",
+      "description": "Dark, cool-toned ruddy flesh layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "knight-questor-flesh",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "knight-questor-flesh",
+      "name": "Knight-Questor Flesh",
+      "type": "Layer",
+      "hex": "#996563",
+      "colorGroup": "Flesh",
+      "description": "Warm, mid-tone healthy skin layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "cadian-fleshtone",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "brass-scorpion",
+      "name": "Brass Scorpion",
+      "type": "Layer Metallic",
+      "hex": "#A47452",
+      "colorGroup": "Metallic",
+      "description": "Warm, reddish brass metallic layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "sycorax-bronze",
+          "descriptor": "Edge Highlight"
+        }
+      ]
+    },
+    {
+      "id": "lothern-blue",
+      "name": "Lothern Blue",
+      "type": "Layer",
+      "hex": "#2C9BCC",
+      "colorGroup": "Blue",
+      "description": "Bright, vibrant sky blue layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "blue-horror",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "temple-guard-blue",
+      "name": "Temple Guard Blue",
+      "type": "Layer",
+      "hex": "#239489",
+      "colorGroup": "Teal",
+      "description": "Vibrant, bright turquoise/teal layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "baharroth-blue",
+          "descriptor": "Edge Highlight"
+        }
+      ]
+    },
+    {
+      "id": "dark-reaper",
+      "name": "Dark Reaper",
+      "type": "Layer",
+      "hex": "#354D4C",
+      "colorGroup": "Blue/Grey",
+      "description": "Dark, moody blue-grey layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "thunderhawk-blue",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "thunderhawk-blue",
+      "name": "Thunderhawk Blue",
+      "type": "Layer",
+      "hex": "#396A70",
+      "colorGroup": "Blue/Grey",
+      "description": "Mid-tone muted blue-grey layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "russ-grey",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "warpfiend-grey",
+      "name": "Warpfiend Grey",
+      "type": "Layer",
+      "hex": "#64566B",
+      "colorGroup": "Purple/Grey",
+      "description": "Warm, purple-tinted dark grey layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "slaanesh-grey",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "slaanesh-grey",
+      "name": "Slaanesh Grey",
+      "type": "Layer",
+      "hex": "#8B8893",
+      "colorGroup": "Purple/Grey",
+      "description": "Light, pale purple-grey layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "pallid-wych-flesh",
+          "descriptor": "Extreme Highlight"
+        }
+      ]
+    },
+    {
+      "id": "administratum-grey",
+      "name": "Administratum Grey",
+      "type": "Layer",
+      "hex": "#949B95",
+      "colorGroup": "Grey",
+      "description": "Neutral, light industrial grey layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "white-scar",
+          "descriptor": "Edge Highlight"
+        }
+      ]
+    },
+    {
+      "id": "emperors-children",
+      "name": "Emperor's Children",
+      "type": "Layer",
+      "hex": "#B74073",
+      "colorGroup": "Purple/Pink",
+      "description": "Vibrant, intense pink layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "fulgrim-pink",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "fulgrim-pink",
+      "name": "Fulgrim Pink",
+      "type": "Layer",
+      "hex": "#F3AEC6",
+      "colorGroup": "Purple/Pink",
+      "description": "Pale, bright pastel pink layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "kakophoni-purple",
+      "name": "Kakophoni Purple",
+      "type": "Layer",
+      "hex": "#8860B4",
+      "colorGroup": "Purple",
+      "description": "Rich, vibrant magenta-purple layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "dechala-lilac",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "dechala-lilac",
+      "name": "Dechala Lilac",
+      "type": "Layer",
+      "hex": "#B598C9",
+      "colorGroup": "Purple",
+      "description": "Soft, pale pastel lilac layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "blue-horror",
+      "name": "Blue Horror",
+      "type": "Layer",
+      "hex": "#9EB5CE",
+      "colorGroup": "Blue/Grey",
+      "description": "Very pale, icy blue-grey layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "white-scar",
+          "descriptor": "Extreme Highlight"
+        }
+      ]
+    },
+    {
+      "id": "hashut-copper",
+      "name": "Hashut Copper",
+      "type": "Layer Metallic",
+      "hex": "#B67652",
+      "colorGroup": "Metallic",
+      "description": "Bright, polished copper layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "sycorax-bronze",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "runefang-steel",
+      "name": "Runefang Steel",
+      "type": "Layer Metallic",
+      "hex": "#C4C5C7",
+      "colorGroup": "Metallic",
+      "description": "Very bright, shining silver metallic layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "stormhost-silver",
+          "descriptor": "Extreme Highlight"
+        }
+      ]
+    },
+    {
+      "id": "ungor-flesh",
+      "name": "Ungor Flesh",
+      "type": "Layer",
+      "hex": "#D1A570",
+      "colorGroup": "Flesh",
+      "description": "Warm, yellowish pale flesh layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "pallid-wych-flesh",
+          "descriptor": "Standard Highlight"
+        }
+      ]
+    },
+    {
+      "id": "baharroth-blue",
+      "name": "Baharroth Blue",
+      "type": "Layer",
+      "hex": "#54B1C5",
+      "colorGroup": "Teal",
+      "description": "Very pale, frosty turquoise edge layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "blue-horror",
+          "descriptor": "Extreme Highlight"
+        }
+      ]
+    },
+    {
+      "id": "hoeth-blue",
+      "name": "Hoeth Blue",
+      "type": "Layer",
+      "hex": "#4C78AF",
+      "colorGroup": "Blue",
+      "description": "Bright, crisp mid-tone blue layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "lothern-blue",
+          "descriptor": "Layer Highlight"
+        }
+      ]
+    },
+    {
+      "id": "lugganath-orange",
+      "name": "Lugganath Orange",
+      "type": "Layer",
+      "hex": "#F39B75",
+      "colorGroup": "Orange",
+      "description": "Soft, pale pastel orange edge layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "dorn-yellow",
+      "name": "Dorn Yellow",
+      "type": "Layer",
+      "hex": "#FFF38B",
+      "colorGroup": "Yellow",
+      "description": "Very pale, sharp yellow edge layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "phalanx-yellow",
+      "name": "Phalanx Yellow",
+      "type": "Layer",
+      "hex": "#FFE200",
+      "colorGroup": "Yellow",
+      "description": "Extremely bright, clean yellow layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "dorn-yellow",
+          "descriptor": "Edge Highlight"
+        }
+      ]
+    },
+    {
+      "id": "gauss-blaster-green",
+      "name": "Gauss Blaster Green",
+      "type": "Layer",
+      "hex": "#7CC4A8",
+      "colorGroup": "Green",
+      "description": "Pale mint-green edge layer",
+      "shades": [],
+      "highlights": []
+    },
+    {
+      "id": "skullcrusher-brass",
+      "name": "Skullcrusher Brass",
+      "type": "Layer Metallic",
+      "hex": "#F0A771",
+      "colorGroup": "Metallic",
+      "description": "Bright, gleaming brass metallic layer",
+      "shades": [],
+      "highlights": [
+        {
+          "id": "canoptek-alloy",
+          "descriptor": "Extreme Highlight"
+        }
+      ]
+    }
+  ]
+}
