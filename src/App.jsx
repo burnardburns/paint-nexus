@@ -6,7 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react'
 import paintData from './data/paints.json'
 
 /* ── Reusable PaintTile ───────────────────────────── */
-const PaintTile = ({ paint, descriptor, onClick, showType = false, showColorGroup = false, isOwned = false }) => {
+const PaintTile = ({ paint, descriptor, onClick, showType = false, showColorGroup = false, isOwned = false, isCustom = false, isInteractive = true }) => {
   const [isMobileExpanded, setIsMobileExpanded] = useState(false)
 
   // 1. Listen for OTHER tiles opening so this one can instantly close
@@ -33,6 +33,7 @@ const PaintTile = ({ paint, descriptor, onClick, showType = false, showColorGrou
   const isMetallic = paint.type?.toLowerCase().includes('metallic')
 
   const handleTileClick = (e) => {
+    if (!isInteractive) return;
     const hasCursor = window.matchMedia('(hover: hover)').matches;
 
     if (hasCursor) {
@@ -59,11 +60,9 @@ const PaintTile = ({ paint, descriptor, onClick, showType = false, showColorGrou
     <div className="relative w-full h-[72px]" onClick={handleTileClick}>
       <div
         className={`
-          absolute top-0 left-0 w-full min-h-[72px] group
-          flex flex-row gap-3 rounded-xl overflow-hidden cursor-pointer
+          absolute top-0 left-0 w-full min-h-[72px] ${isInteractive ? 'group cursor-pointer hover:z-50 hover:scale-[1.15] hover:bg-bg-secondary/95 hover:border-accent-primary/60 hover:shadow-2xl hover:h-auto' : ''}
+          flex flex-row gap-3 rounded-xl overflow-hidden
           shadow-sm transition-all duration-200 ease-out origin-center
-          hover:z-50 hover:scale-[1.15] hover:bg-bg-secondary/95 
-          hover:border-accent-primary/60 hover:shadow-2xl hover:h-auto
           ${expandedContainer}
         `}
       >
@@ -101,9 +100,10 @@ const PaintTile = ({ paint, descriptor, onClick, showType = false, showColorGrou
             </span>
           )}
 
-          {descriptor && (
-            <span className="text-[9px] bg-accent-secondary/20 text-accent-secondary px-1.5 py-0.5 rounded mt-1.5 self-start font-bold uppercase tracking-wider border border-accent-secondary/30">
-              {descriptor}
+          {(descriptor || isCustom) && (
+            <span className={`text-[9px] px-1.5 py-0.5 rounded mt-1.5 self-start font-bold uppercase tracking-wider border flex items-center gap-1 ${isCustom ? 'bg-purple-500/20 text-purple-300 border-purple-500/30' : 'bg-accent-secondary/20 text-accent-secondary border-accent-secondary/30'}`}>
+              {isCustom && <Sparkles size={10} />}
+              {descriptor || (isCustom ? 'Custom' : '')}
             </span>
           )}
         </div>
@@ -117,6 +117,14 @@ export default function App() {
   const [searchTerm, setSearchTerm] = useState('')
   const [history, setHistory] = useState([])
   const [recipeGroups, setRecipeGroups] = useState([])
+  const [notification, setNotification] = useState(null)
+
+  useEffect(() => {
+    if (notification) {
+      const timer = setTimeout(() => setNotification(null), 3000)
+      return () => clearTimeout(timer)
+    }
+  }, [notification])
 
   /* ── Unified Filters & State ───────────── */
   const [currentView, setCurrentView] = useState('nexus')
@@ -128,18 +136,22 @@ export default function App() {
   /* ── Collection & Native Storage ───────────── */
   const [isEditingCollection, setIsEditingCollection] = useState(false)
   const [ownedPaints, setOwnedPaints] = useState([])
+  const [customHighlights, setCustomHighlights] = useState({})
   const [isStorageLoaded, setIsStorageLoaded] = useState(false)
+  const [collectionSelectedPaint, setCollectionSelectedPaint] = useState(null)
 
   // 1. Load the data from the native hard drive when the app starts
   useEffect(() => {
-    const loadCollection = async () => {
-      const { value } = await Preferences.get({ key: 'citadelOwnedPaints' });
-      if (value) {
-        setOwnedPaints(JSON.parse(value));
-      }
+    const loadData = async () => {
+      const owned = await Preferences.get({ key: 'citadelOwnedPaints' });
+      if (owned.value) setOwnedPaints(JSON.parse(owned.value));
+
+      const custom = await Preferences.get({ key: 'citadelCustomHighlights' });
+      if (custom.value) setCustomHighlights(JSON.parse(custom.value));
+
       setIsStorageLoaded(true); // Tell React it's safe to start saving
     };
-    loadCollection();
+    loadData();
   }, []);
 
   // 2. Save the data whenever you click a paint (but only AFTER the initial load)
@@ -149,8 +161,12 @@ export default function App() {
         key: 'citadelOwnedPaints',
         value: JSON.stringify(ownedPaints)
       });
+      Preferences.set({
+        key: 'citadelCustomHighlights',
+        value: JSON.stringify(customHighlights)
+      });
     }
-  }, [ownedPaints, isStorageLoaded]);
+  }, [ownedPaints, customHighlights, isStorageLoaded]);
 
   /* ── Dynamic Filter Lists ───────────── */
   const DYNAMIC_TYPES = ['All', ...Array.from(new Set(paintData.paints.map(p => p.type).filter(Boolean))).sort()]
@@ -223,6 +239,26 @@ export default function App() {
     let nextHistory = [...history];
     const isAlreadySelected = nextHistory.some(h => h.id === paint.id);
 
+    if (currentSelected) {
+      if (paint.type === 'Shade' && isAlreadySelected) {
+        // Allow removing a shade
+      } else {
+        if (isAlreadySelected) {
+          setNotification("Cannot add a previously used paint to the recipe.");
+          return;
+        }
+
+        const isShade = currentSelected.shades?.includes(paint.id);
+        const isHighlight = currentSelected.highlights?.some(h => h.id === paint.id);
+        const isCustomHighlight = customHighlights[currentSelected.id]?.some(h => h.id === paint.id);
+
+        if (!isShade && !isHighlight && !isCustomHighlight) {
+          setNotification("Paint cannot be added to existing recipe order. It is not related to the current step.");
+          return;
+        }
+      }
+    }
+
     if (paint.type === 'Shade' && isAlreadySelected) {
       nextHistory = nextHistory.filter(p => p.id !== paint.id);
     } else {
@@ -245,12 +281,14 @@ export default function App() {
   const handleSwitchView = (view) => {
     if (view === currentView) return;
     setCurrentView(view);
+    setCollectionSelectedPaint(null);
     window.history.pushState({ view, history }, '');
   }
 
   const goHome = () => {
     setHistory([]);
     setCurrentView('nexus');
+    setCollectionSelectedPaint(null);
     window.history.pushState({ view: 'nexus', history: [] }, '');
     setSearchTerm('');
   }
@@ -330,11 +368,226 @@ export default function App() {
   const reverseParents = currentSelected
     ? paintData.paints.filter(p =>
       p.highlights?.some(h => h.id === currentSelected.id) ||
+      (customHighlights[p.id] && customHighlights[p.id].some(h => h.id === currentSelected.id)) ||
       p.shades?.includes(currentSelected.id)
     )
     : [];
 
+  const [showAddCustom, setShowAddCustom] = useState(false);
+  const [customSearchTerm, setCustomSearchTerm] = useState('');
+
+  const addCustomHighlight = (parentPaintId, targetPaint) => {
+    setCustomHighlights(prev => {
+      const existing = prev[parentPaintId] || [];
+      if (existing.some(h => h.id === targetPaint.id)) return prev;
+      return {
+        ...prev,
+        [parentPaintId]: [...existing, { id: targetPaint.id, descriptor: 'Custom', isCustom: true }]
+      };
+    });
+    setCustomSearchTerm('');
+    setShowAddCustom(false);
+  }
+
+  const removeCustomHighlight = (parentPaintId, targetPaintId) => {
+    setCustomHighlights(prev => {
+      const existing = prev[parentPaintId] || [];
+      return {
+        ...prev,
+        [parentPaintId]: existing.filter(h => h.id !== targetPaintId)
+      };
+    });
+  }
+
   /* ── UI Components ───────────────────────── */
+  const renderPaintProfile = (profilePaint, isCollectionContext = false) => {
+    const mergedHighlights = [
+      ...(profilePaint.highlights || []),
+      ...(customHighlights[profilePaint.id] || []).map(h => ({ ...h, isCustom: true }))
+    ];
+
+    const contextReverseParents = paintData.paints.filter(p =>
+      p.highlights?.some(h => h.id === profilePaint.id) ||
+      (customHighlights[p.id] && customHighlights[p.id].some(h => h.id === profilePaint.id)) ||
+      p.shades?.includes(profilePaint.id)
+    );
+
+    const customSearchMatches = paintData.paints
+      .filter(p => p.id !== profilePaint.id && !mergedHighlights.some(mh => mh.id === p.id) && p.name.toLowerCase().includes(customSearchTerm.toLowerCase()))
+      .slice(0, 10);
+
+    return (
+      <div className="flex flex-col gap-5 animate-in">
+        {/* Special Logic Banner */}
+        {profilePaint.specialLogic && (
+          <div className="p-3.5 bg-accent-primary/10 border border-accent-primary/30 rounded-xl flex items-start gap-3">
+            <Info size={18} className="text-accent-primary flex-shrink-0 mt-0.5" />
+            <p className="text-sm font-medium text-blue-100">{profilePaint.specialLogic}</p>
+          </div>
+        )}
+
+        {/* Recommended Next Steps */}
+        <section className="glass p-6">
+          <h2 className="text-lg font-black flex items-center gap-2 mb-6">
+            <Droplets size={20} className="text-accent-secondary" />
+            Recommended Next Steps
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-glass-border/30" />
+
+            {/* Shading column */}
+            <div>
+              <h4 className="text-xs uppercase tracking-[0.2em] text-text-muted font-bold mb-3 flex items-center gap-2">
+                <div className="w-1 h-3.5 bg-accent-secondary rounded-full" />
+                Depth (Washes)
+              </h4>
+              <div className="flex flex-col gap-2.5">
+                {profilePaint.shades?.length > 0 ? (
+                  profilePaint.shades.map(id => {
+                    const paint = paintData.paints.find(p => p.id === id)
+                    const isSelected = !isCollectionContext && history.some(h => h.id === id);
+
+                    return (
+                      <div key={id} className="relative group cursor-pointer">
+                        <div className={`transition-all ${isSelected ? 'opacity-80 grayscale-[30%] group-hover:grayscale-0 group-hover:opacity-100' : ''}`}>
+                          <PaintTile paint={paint} showType isOwned={ownedPaints.includes(paint.id)} isInteractive={!isCollectionContext} onClick={() => !isCollectionContext && handleSelectPaint(paint)} />
+                        </div>
+
+                        {isSelected && (
+                          <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-green-500/20 text-green-400 p-1.5 rounded-full border border-green-500/30 shadow-lg backdrop-blur-sm animate-in zoom-in group-hover:bg-red-500/20 group-hover:text-red-400 group-hover:border-red-500/30 transition-colors pointer-events-none">
+                            <Sparkles size={16} className="group-hover:hidden" />
+                            <Trash2 size={16} className="hidden group-hover:block" />
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })
+                ) : (
+                  <div className="border border-dashed border-glass-border/40 rounded-xl p-4 text-center">
+                    <p className="text-xs text-text-muted font-medium">
+                      {profilePaint.type === 'Contrast' ? 'Contrast paints provide inherent shading.' : 'No recommendations.'}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Highlights column */}
+            <div>
+              <h4 className="text-xs uppercase tracking-[0.2em] text-text-muted font-bold mb-3 flex items-center gap-2">
+                <div className="w-1 h-3.5 bg-accent-primary rounded-full" />
+                Highlights (Layers)
+              </h4>
+              <div className="flex flex-col gap-2.5">
+                {mergedHighlights.length > 0 ? (
+                  mergedHighlights.map(h => {
+                    const paint = paintData.paints.find(p => p.id === h.id)
+                    return (
+                      <div key={h.id} className="relative group">
+                        <PaintTile paint={paint} descriptor={h.descriptor} isCustom={h.isCustom} showType isOwned={ownedPaints.includes(paint.id)} isInteractive={!isCollectionContext} onClick={() => { if (!isCollectionContext && paint) handleSelectPaint(paint) }} />
+                        {h.isCustom && (
+                          <button onClick={() => removeCustomHighlight(profilePaint.id, h.id)} className="absolute top-1/2 right-4 -translate-y-1/2 bg-red-500/10 text-red-500 p-1.5 rounded-full border border-red-500/30 shadow-lg backdrop-blur-sm opacity-0 group-hover:opacity-100 hover:bg-red-500 hover:text-white transition-all">
+                            <Trash2 size={14} />
+                          </button>
+                        )}
+                      </div>
+                    )
+                  })
+                ) : (
+                  <div className="border border-dashed border-glass-border/40 rounded-xl p-4 text-center">
+                    <p className="text-xs text-text-muted font-medium">Final highlight stage reached.</p>
+                  </div>
+                )}
+
+                {/* Add Custom Highlight UI */}
+                <div className="mt-2">
+                  {!showAddCustom ? (
+                    <button onClick={() => setShowAddCustom(true)} className="w-full py-2 border border-dashed border-accent-primary/40 text-accent-primary/80 rounded-xl text-xs font-bold hover:bg-accent-primary/10 transition-colors">
+                      + Add Custom Highlight
+                    </button>
+                  ) : (
+                    <div className="p-3 bg-bg-tertiary/50 border border-glass-border rounded-xl flex flex-col gap-2 relative z-30 shadow-xl">
+                      <div className="flex justify-between items-center mb-1">
+                        <span className="text-[10px] font-bold text-text-muted uppercase tracking-wider">Search Paints</span>
+                        <button onClick={() => { setShowAddCustom(false); setCustomSearchTerm(''); }} className="text-xs text-text-secondary hover:text-white">Cancel</button>
+                      </div>
+                      <input
+                        type="text"
+                        autoFocus
+                        value={customSearchTerm}
+                        onChange={(e) => setCustomSearchTerm(e.target.value)}
+                        placeholder="Type a paint name..."
+                        className="w-full bg-bg-secondary border border-glass-border rounded-lg px-3 py-2 text-white focus:outline-none focus:border-accent-primary transition-all text-xs"
+                      />
+                      {customSearchTerm && customSearchMatches.length > 0 && (
+                        <div className="flex flex-col mt-1 max-h-48 overflow-y-auto rounded-lg border border-glass-border/50 bg-bg-secondary p-1">
+                          {customSearchMatches.map(cp => (
+                            <button
+                              key={cp.id}
+                              onClick={() => addCustomHighlight(profilePaint.id, cp)}
+                              className="text-left px-2 py-1.5 hover:bg-bg-tertiary rounded flex items-center gap-2 transition-colors group"
+                            >
+                              <div className="w-4 h-4 rounded-full border border-white/10 flex-shrink-0 swatch-tile-bg" style={{ backgroundColor: cp.hex }} />
+                              <span className="text-xs font-semibold text-white group-hover:text-accent-primary truncate">{cp.name}</span>
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Reverse Highlights */}
+        <section className="glass p-6 border-t-4 border-t-accent-secondary/40">
+          <h2 className="text-lg font-black flex items-center gap-2 mb-5">
+            <Layers size={20} className="text-accent-secondary" />
+            Used to Highlight…
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
+            {contextReverseParents.length > 0 ? (
+              contextReverseParents.map(p => (
+                <PaintTile key={p.id} paint={p} showType isOwned={ownedPaints.includes(p.id)} isInteractive={!isCollectionContext} onClick={() => !isCollectionContext && handleSelectPaint(p)} />
+              ))
+            ) : (
+              <div className="col-span-full border border-dashed border-glass-border/40 rounded-xl p-5 text-center">
+                <p className="text-sm text-text-muted font-medium">This is typically a starting point or base layer.</p>
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Cross-Range Analyst */}
+        {profilePaint.crossRange && (
+          <section className="glass p-6 border border-amber-500/20 bg-amber-950/20">
+            <h2 className="text-lg font-black flex items-center gap-2 mb-4">
+              <Sparkles size={20} className="text-amber-400" />
+              Cross-Range Color Analyst
+            </h2>
+            <div className="flex items-center gap-5">
+              <div className="w-14 h-14 rounded-xl swatch-tile-bg flex-shrink-0 border border-amber-500/30" style={{ backgroundColor: profilePaint.hex }} />
+              <div className="flex flex-col gap-1">
+                <p className="text-sm text-gray-300">
+                  Closest match: <span className="text-white font-bold">{profilePaint.crossRange.match}</span>
+                </p>
+                <p className="text-xs text-text-muted">
+                  Range: <span className="text-text-secondary font-semibold">{profilePaint.crossRange.range}</span>
+                </p>
+                <p className="text-sm mt-1">
+                  Derived descriptor: <span className="text-amber-400 font-black italic text-base">{profilePaint.crossRange.derivedDescriptor}</span>
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+      </div>
+    );
+  };
+
   const renderControlCenter = () => (
     <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-5 mb-6 bg-bg-secondary/30 p-4 rounded-xl border border-glass-border/40 animate-in">
       {/* Sort Group */}
@@ -485,47 +738,96 @@ export default function App() {
           </div>
 
           {/* Injecting our Unified Control Center! */}
-          {renderControlCenter()}
+          {collectionSelectedPaint ? (
+            <div className="flex flex-col gap-6 animate-in">
+              <button
+                onClick={() => setCollectionSelectedPaint(null)}
+                className="self-start flex items-center gap-2 text-sm font-bold text-text-muted hover:text-white transition-colors bg-bg-tertiary/50 px-4 py-2 rounded-lg border border-glass-border/30"
+              >
+                <ArrowLeft size={16} /> Back to Collection Grid
+              </button>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-            {gridPaints.map(paint => {
-              const isOwned = ownedPaints.includes(paint.id);
-
-              return (
-                <div
-                  key={paint.id}
-                  className={`relative group ${isEditingCollection ? 'cursor-pointer' : ''}`}
-                  onClick={() => isEditingCollection && toggleOwnedPaint(paint.id)}
-                >
-                  <div className={`transition-all ${!isOwned ? 'opacity-40 grayscale' : ''} ${isEditingCollection && !isOwned ? 'hover:opacity-80 hover:grayscale-[50%]' : ''}`}>
-                    <PaintTile paint={paint} showType isOwned={isOwned} />
-                  </div>
-
-                  {isEditingCollection && isOwned && (
-                    <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-green-500 text-white p-1 rounded-full shadow-lg border-2 border-green-400 animate-in zoom-in">
-                      <Sparkles size={14} />
+              <div className="grid grid-cols-1 lg:col-span-3 gap-6">
+                <div>
+                  <div className="glass p-5 animate-in relative overflow-hidden mb-6">
+                    <div className="absolute top-0 right-0 w-32 h-32 blur-3xl opacity-20 pointer-events-none" style={{ backgroundColor: collectionSelectedPaint.hex }} />
+                    <div className="flex items-start gap-5 relative z-10">
+                      <div className="w-20 h-20 rounded-xl shadow-lg border-2 border-glass-border flex-shrink-0 swatch-tile-bg" style={{ backgroundColor: collectionSelectedPaint.hex }} />
+                      <div className="flex flex-col min-w-0 flex-grow">
+                        <div className="flex justify-between items-start">
+                          <h3 className="text-xl font-black text-white leading-tight pr-2">{collectionSelectedPaint.name}</h3>
+                          {ownedPaints.includes(collectionSelectedPaint.id) && (
+                            <div className="flex items-center gap-1 bg-amber-500/20 text-amber-500 px-1.5 py-0.5 rounded text-[9px] font-black uppercase tracking-wider shadow-sm flex-shrink-0 border border-amber-500/30">
+                              <Package size={10} /> Owned
+                            </div>
+                          )}
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2 mt-1.5 mb-2.5">
+                          <span className="text-[10px] px-1.5 py-0.5 bg-bg-tertiary rounded uppercase font-bold tracking-wider text-text-secondary border border-glass-border/30">{collectionSelectedPaint.type}</span>
+                          <span className="text-text-muted text-xs font-medium">{collectionSelectedPaint.colorGroup}</span>
+                        </div>
+                        {collectionSelectedPaint.description && (
+                          <p className="text-sm text-text-secondary italic leading-snug">"{collectionSelectedPaint.description}"</p>
+                        )}
+                      </div>
                     </div>
-                  )}
+                  </div>
+                  {renderPaintProfile(collectionSelectedPaint, true)}
                 </div>
-              )
-            })}
-
-            {/* Empty states reflect our new master global filter */}
-            {ownershipFilter === 'Owned' && gridPaints.length === 0 && (
-              <div className="col-span-full py-20 flex flex-col items-center justify-center opacity-50 text-center">
-                <Package size={48} className="mb-4" />
-                <p className="text-lg font-bold">No paints found.</p>
-                <p className="text-sm mt-1">Switch to <strong>'All Inventory'</strong> to view the full catalog, or adjust your Color/Type filters.</p>
               </div>
-            )}
+            </div>
+          ) : (
+            <>
+              {renderControlCenter()}
 
-            {ownershipFilter === 'Missing' && gridPaints.length === 0 && (
-              <div className="col-span-full py-20 flex flex-col items-center justify-center opacity-50 text-center text-green-400">
-                <Sparkles size={48} className="mb-4" />
-                <p className="text-lg font-bold">You own everything in this filter!</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {gridPaints.map(paint => {
+                  const isOwned = ownedPaints.includes(paint.id);
+
+                  return (
+                    <div
+                      key={paint.id}
+                      className={`relative group cursor-pointer`}
+                      onClick={() => {
+                        if (isEditingCollection) {
+                          toggleOwnedPaint(paint.id);
+                        } else {
+                          setCollectionSelectedPaint(paint);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                      }}
+                    >
+                      <div className={`transition-all ${!isOwned ? 'opacity-40 grayscale' : ''} ${isEditingCollection && !isOwned ? 'hover:opacity-80 hover:grayscale-[50%]' : ''}`}>
+                        <PaintTile paint={paint} showType isOwned={isOwned} />
+                      </div>
+
+                      {isEditingCollection && isOwned && (
+                        <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-green-500 text-white p-1 rounded-full shadow-lg border-2 border-green-400 animate-in zoom-in">
+                          <Sparkles size={14} />
+                        </div>
+                      )}
+                    </div>
+                  )
+                })}
+
+                {/* Empty states reflect our new master global filter */}
+                {ownershipFilter === 'Owned' && gridPaints.length === 0 && (
+                  <div className="col-span-full py-20 flex flex-col items-center justify-center opacity-50 text-center">
+                    <Package size={48} className="mb-4" />
+                    <p className="text-lg font-bold">No paints found.</p>
+                    <p className="text-sm mt-1">Switch to <strong>'All Inventory'</strong> to view the full catalog, or adjust your Color/Type filters.</p>
+                  </div>
+                )}
+
+                {ownershipFilter === 'Missing' && gridPaints.length === 0 && (
+                  <div className="col-span-full py-20 flex flex-col items-center justify-center opacity-50 text-center text-green-400">
+                    <Sparkles size={48} className="mb-4" />
+                    <p className="text-lg font-bold">You own everything in this filter!</p>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
+            </>
+          )}
         </div>
       ) : (
         /* ── Main Grid (Nexus View) ──────────────────────── */
@@ -728,128 +1030,7 @@ export default function App() {
             {currentSelected ? (
               <div className="flex flex-col gap-5 animate-in">
 
-                {/* Special Logic Banner */}
-                {currentSelected.specialLogic && (
-                  <div className="p-3.5 bg-accent-primary/10 border border-accent-primary/30 rounded-xl flex items-start gap-3">
-                    <Info size={18} className="text-accent-primary flex-shrink-0 mt-0.5" />
-                    <p className="text-sm font-medium text-blue-100">{currentSelected.specialLogic}</p>
-                  </div>
-                )}
-
-                {/* Recommended Next Steps */}
-                <section className="glass p-6">
-                  <h2 className="text-lg font-black flex items-center gap-2 mb-6">
-                    <Droplets size={20} className="text-accent-secondary" />
-                    Recommended Next Steps
-                  </h2>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-                    <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-glass-border/30" />
-
-                    {/* Shading column */}
-                    <div>
-                      <h4 className="text-xs uppercase tracking-[0.2em] text-text-muted font-bold mb-3 flex items-center gap-2">
-                        <div className="w-1 h-3.5 bg-accent-secondary rounded-full" />
-                        Depth (Washes)
-                      </h4>
-                      <div className="flex flex-col gap-2.5">
-                        {currentSelected.shades?.length > 0 ? (
-                          currentSelected.shades.map(id => {
-                            const paint = paintData.paints.find(p => p.id === id)
-                            const isSelected = history.some(h => h.id === id);
-
-                            return (
-                              <div key={id} className="relative group cursor-pointer">
-                                <div className={`transition-all ${isSelected ? 'opacity-80 grayscale-[30%] group-hover:grayscale-0 group-hover:opacity-100' : ''}`}>
-                                  <PaintTile paint={paint} showType isOwned={ownedPaints.includes(paint.id)} onClick={() => handleSelectPaint(paint)} />
-                                </div>
-
-                                {/* The Visual Tick */}
-                                {isSelected && (
-                                  <div className="absolute top-1/2 right-4 -translate-y-1/2 bg-green-500/20 text-green-400 p-1.5 rounded-full border border-green-500/30 shadow-lg backdrop-blur-sm animate-in zoom-in group-hover:bg-red-500/20 group-hover:text-red-400 group-hover:border-red-500/30 transition-colors pointer-events-none">
-                                    <Sparkles size={16} className="group-hover:hidden" />
-                                    <Trash2 size={16} className="hidden group-hover:block" />
-                                  </div>
-                                )}
-                              </div>
-                            )
-                          })
-                        ) : (
-                          <div className="border border-dashed border-glass-border/40 rounded-xl p-4 text-center">
-                            <p className="text-xs text-text-muted font-medium">
-                              {currentSelected.type === 'Contrast' ? 'Contrast paints provide inherent shading.' : 'No recommendations.'}
-                            </p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Highlights column */}
-                    <div>
-                      <h4 className="text-xs uppercase tracking-[0.2em] text-text-muted font-bold mb-3 flex items-center gap-2">
-                        <div className="w-1 h-3.5 bg-accent-primary rounded-full" />
-                        Highlights (Layers)
-                      </h4>
-                      <div className="flex flex-col gap-2.5">
-                        {currentSelected.highlights?.length > 0 ? (
-                          currentSelected.highlights.map(h => {
-                            const paint = paintData.paints.find(p => p.id === h.id)
-                            return (
-                              <PaintTile key={h.id} paint={paint} descriptor={h.descriptor} showType isOwned={ownedPaints.includes(paint.id)} onClick={() => paint && handleSelectPaint(paint)} />
-                            )
-                          })
-                        ) : (
-                          <div className="border border-dashed border-glass-border/40 rounded-xl p-4 text-center">
-                            <p className="text-xs text-text-muted font-medium">Final highlight stage reached.</p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </section>
-
-                {/* Reverse Highlights */}
-                <section className="glass p-6 border-t-4 border-t-accent-secondary/40">
-                  <h2 className="text-lg font-black flex items-center gap-2 mb-5">
-                    <Layers size={20} className="text-accent-secondary" />
-                    Used to Highlight…
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
-                    {reverseParents.length > 0 ? (
-                      reverseParents.map(p => (
-                        <PaintTile key={p.id} paint={p} showType isOwned={ownedPaints.includes(p.id)} onClick={() => handleSelectPaint(p)} />
-                      ))
-                    ) : (
-                      <div className="col-span-full border border-dashed border-glass-border/40 rounded-xl p-5 text-center">
-                        <p className="text-sm text-text-muted font-medium">This is typically a starting point or base layer.</p>
-                      </div>
-                    )}
-                  </div>
-                </section>
-
-                {/* Cross-Range Analyst */}
-                {currentSelected.crossRange && (
-                  <section className="glass p-6 border border-amber-500/20 bg-amber-950/20">
-                    <h2 className="text-lg font-black flex items-center gap-2 mb-4">
-                      <Sparkles size={20} className="text-amber-400" />
-                      Cross-Range Color Analyst
-                    </h2>
-                    <div className="flex items-center gap-5">
-                      <div className="w-14 h-14 rounded-xl swatch-tile-bg flex-shrink-0 border border-amber-500/30" style={{ backgroundColor: currentSelected.hex }} />
-                      <div className="flex flex-col gap-1">
-                        <p className="text-sm text-gray-300">
-                          Closest match: <span className="text-white font-bold">{currentSelected.crossRange.match}</span>
-                        </p>
-                        <p className="text-xs text-text-muted">
-                          Range: <span className="text-text-secondary font-semibold">{currentSelected.crossRange.range}</span>
-                        </p>
-                        <p className="text-sm mt-1">
-                          Derived descriptor: <span className="text-amber-400 font-black italic text-base">{currentSelected.crossRange.derivedDescriptor}</span>
-                        </p>
-                      </div>
-                    </div>
-                  </section>
-                )}
+                {renderPaintProfile(currentSelected, false)}
               </div>
             ) : (
               /* ── Home / Catalog ── */
@@ -892,6 +1073,12 @@ export default function App() {
       {/* Vercel Analytics invisible tracker */}
       <Analytics />
       <SpeedInsights />
+
+      {notification && (
+        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 bg-red-500/95 text-white px-4 py-2.5 rounded-lg shadow-xl font-bold text-sm z-50 animate-in slide-in-from-bottom-2 fade-in duration-300">
+          {notification}
+        </div>
+      )}
     </div>
   )
 }
