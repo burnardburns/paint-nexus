@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Search, Info, ArrowRight, ArrowLeft, Layers, Droplets, Home, ChevronRight, Paintbrush, Sparkles, FolderOpen, Trash2, Edit3, Package, Copy, Check } from 'lucide-react'
 import { Preferences } from '@capacitor/preferences'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import paintData from './data/paints.json'
 
 /* ── Reusable PaintTile ───────────────────────────── */
@@ -890,6 +891,7 @@ export default function App() {
 
       {/* Vercel Analytics invisible tracker */}
       <Analytics />
+      <SpeedInsights />
     </div>
   )
 }
